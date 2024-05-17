@@ -161,7 +161,6 @@ public class Login extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(25, 18, 211));
         jButton1.setText("LOGIN");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 340, 40));
@@ -210,7 +209,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 340, 20));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ADMIN.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/WHITE ADMIN.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -236,14 +235,6 @@ public class Login extends javax.swing.JFrame {
 
     }//GEN-LAST:event_ShowMouseClicked
 
-    private void DisableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisableMouseClicked
-        txtPassword.setEchoChar((char)0);
-        Disable.setVisible(false);
-        Disable.setEnabled(false);
-        Show.setEnabled(true);
-
-    }//GEN-LAST:event_DisableMouseClicked
-
     private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
@@ -263,6 +254,13 @@ public class Login extends javax.swing.JFrame {
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void DisableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisableMouseClicked
+        txtPassword.setEchoChar((char)0);
+        Disable.setVisible(false);
+        Disable.setEnabled(false);
+        Show.setEnabled(true);
+    }//GEN-LAST:event_DisableMouseClicked
 
     
     public static void main(String args[]) {
