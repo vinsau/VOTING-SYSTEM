@@ -63,10 +63,10 @@ public class VoterVerifyCode extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("<html>Click send to obtain the verification code. The code will be sent  to your email. </html>");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 340, 50));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 340, 70));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setText("SEND");
@@ -76,15 +76,15 @@ public class VoterVerifyCode extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 80, 30));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 80, 30));
 
         jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 310, 30));
+        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 320, 30));
 
         jButton2.setBackground(new java.awt.Color(51, 102, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("NEXT");
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 260, 50));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 240, 50));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 400, 340));
 
