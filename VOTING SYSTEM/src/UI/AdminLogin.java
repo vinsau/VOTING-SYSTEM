@@ -37,7 +37,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         BDisable = new javax.swing.JLabel();
         BShow = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        UserLogin = new javax.swing.JLabel();
         txtUsername = new javax.swing.JTextField();
         txtPassword = new javax.swing.JPasswordField();
         jLabel10 = new javax.swing.JLabel();
@@ -75,7 +75,7 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("ADMIN LOGIN");
+        jLabel4.setText("Admin Login");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 400, 64));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -88,12 +88,13 @@ public class AdminLogin extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setText("Password");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jButton1.setText("LOGIN");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 300, 40));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 300, 40));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ADMIN ICON.png"))); // NOI18N
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 40, 40));
@@ -105,7 +106,7 @@ public class AdminLogin extends javax.swing.JFrame {
                 BDisableMouseClicked(evt);
             }
         });
-        jPanel1.add(BDisable, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 30, 30));
+        jPanel1.add(BDisable, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 30, 30));
 
         BShow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK EYE.png"))); // NOI18N
         BShow.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -114,14 +115,20 @@ public class AdminLogin extends javax.swing.JFrame {
                 BShowMouseClicked(evt);
             }
         });
-        jPanel1.add(BShow, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, 30, 30));
+        jPanel1.add(BShow, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 30, 30));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK USER.png"))); // NOI18N
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 30, 30));
+        UserLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK USER.png"))); // NOI18N
+        UserLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        UserLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                UserLoginMouseClicked(evt);
+            }
+        });
+        jPanel1.add(UserLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 460, 30, 30));
 
         txtUsername.setFont(txtUsername.getFont().deriveFont(txtUsername.getFont().getSize()+3f));
         txtUsername.setBorder(null);
-        jPanel1.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 250, 30));
+        jPanel1.add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 250, 25));
 
         txtPassword.setFont(txtPassword.getFont().deriveFont(txtPassword.getFont().getSize()+4f));
         txtPassword.setBorder(null);
@@ -130,10 +137,10 @@ public class AdminLogin extends javax.swing.JFrame {
                 txtPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 250, 30));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 250, 25));
 
         jLabel10.setText("__________________________________");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, -1, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
 
         jLabel11.setText("__________________________________");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
@@ -173,6 +180,10 @@ public class AdminLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPasswordActionPerformed
 
+    private void UserLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserLoginMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UserLoginMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -211,6 +222,7 @@ public class AdminLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BDisable;
     private javax.swing.JLabel BShow;
+    private javax.swing.JLabel UserLogin;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -222,7 +234,6 @@ public class AdminLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUsername;
