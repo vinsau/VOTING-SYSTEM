@@ -25,7 +25,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     public VoterMainPanel() {
         initComponents();
 
-        panels = new JPanel[]{dashboardpanel, electionspanel, resultspanel, settingspanel, logoutpanel};
+        panels = new JPanel[]{dashboardpanel, electionspanel, resultspanel, settingspanel};
         jTabbedPane1.setSelectedIndex(0);
         currentDateTime();
         this.dateTime = dateTime;
@@ -90,9 +90,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
         dateTime = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -109,8 +110,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         INDEX3 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        INDEX4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         PROFILE = new javax.swing.JLabel();
         ID = new javax.swing.JLabel();
@@ -123,12 +122,12 @@ public class VoterMainPanel extends javax.swing.JFrame {
         resultspanel = new javax.swing.JPanel();
         results = new javax.swing.JLabel();
         resultspic = new javax.swing.JLabel();
-        logoutpanel = new javax.swing.JPanel();
-        logout = new javax.swing.JLabel();
-        logoutpic = new javax.swing.JLabel();
         settingspanel = new javax.swing.JPanel();
         settingspic = new javax.swing.JLabel();
         settings = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        LOGOUT = new javax.swing.JPanel();
+        logout = new javax.swing.JLabel();
 
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -141,7 +140,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("X");
@@ -151,9 +150,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 10, 30, 30));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 10, 30, 30));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 27)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("—");
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -162,9 +161,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 jLabel6MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, -1, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 10, -1, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 1000, 50));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1060, 50));
 
         INDEX0.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -173,20 +172,17 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         dateTime.setBackground(new java.awt.Color(0, 0, 0));
         dateTime.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        dateTime.setForeground(new java.awt.Color(0, 0, 0));
         dateTime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dateTime.setText("DateTime");
-        jPanel3.add(dateTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 300, 40));
+        jPanel3.add(dateTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 40));
 
-        INDEX0.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 40));
+        INDEX0.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 40));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Announcement");
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -195,65 +191,71 @@ public class VoterMainPanel extends javax.swing.JFrame {
         jTextArea1.setToolTipText("");
         jScrollPane1.setViewportView(jTextArea1);
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE)
+        jPanel7.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 49, 570, 510));
+
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 30)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Announcement");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 535, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 550, -1));
+        jPanel7.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, -1));
+
+        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 580, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Voters who haven't voted: ");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, 230, 30));
+        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, 230, 30));
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Registered Voters:");
-        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 170, 30));
+        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 70, 170, 30));
 
         jLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Voters who have voted: ");
-        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, 230, 30));
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 120, 230, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK USER.png"))); // NOI18N
-        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 170, 30, -1));
+        jPanel5.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, 30, -1));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK USER.png"))); // NOI18N
-        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 30, -1));
+        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 70, 30, -1));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLACK USER.png"))); // NOI18N
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 30, -1));
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 120, 30, -1));
 
         jPanel4.setLayout(new java.awt.BorderLayout());
-        jPanel5.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, 420, 310));
+        jPanel5.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 420, 310));
 
         jLabel14.setFont(new java.awt.Font("Arial Black", 1, 30)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("VOTING SYSTEM");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, -1, -1));
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 10, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("VOTERS' STATISTICS");
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 220, -1, -1));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 220, -1, -1));
 
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ADMIN PORTAL.png"))); // NOI18N
-        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, -1, -1));
+        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 70, 120, 110));
 
-        INDEX0.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1000, 600));
+        INDEX0.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1050, 600));
 
         jTabbedPane1.addTab("", INDEX0);
 
@@ -278,28 +280,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("", INDEX3);
 
-        jLabel3.setText("form 5");
-
-        javax.swing.GroupLayout INDEX4Layout = new javax.swing.GroupLayout(INDEX4);
-        INDEX4.setLayout(INDEX4Layout);
-        INDEX4Layout.setHorizontalGroup(
-            INDEX4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(INDEX4Layout.createSequentialGroup()
-                .addGap(449, 449, 449)
-                .addComponent(jLabel3)
-                .addContainerGap(511, Short.MAX_VALUE))
-        );
-        INDEX4Layout.setVerticalGroup(
-            INDEX4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(INDEX4Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(jLabel3)
-                .addContainerGap(542, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("", INDEX4);
-
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 1000, 680));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 1060, 680));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -315,7 +296,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 IDMouseClicked(evt);
             }
         });
-        jPanel1.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 110, 30));
+        jPanel1.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, 30));
 
         dashboardpanel.setBackground(new java.awt.Color(255, 255, 255));
         dashboardpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -329,7 +310,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 dashboardpicMouseClicked(evt);
             }
         });
-        dashboardpanel.add(dashboardpic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 60));
+        dashboardpanel.add(dashboardpic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 60));
 
         dashboard.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         dashboard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -340,9 +321,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 dashboardMouseClicked(evt);
             }
         });
-        dashboardpanel.add(dashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 49, 230, 40));
+        dashboardpanel.add(dashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 49, 170, 40));
 
-        jPanel1.add(dashboardpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 230, 90));
+        jPanel1.add(dashboardpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 170, 90));
 
         electionspanel.setBackground(new java.awt.Color(255, 255, 255));
         electionspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -356,7 +337,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 electionsMouseClicked(evt);
             }
         });
-        electionspanel.add(elections, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 230, 40));
+        electionspanel.add(elections, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 170, 40));
 
         electionspic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         electionspic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ELECTION.png"))); // NOI18N
@@ -366,9 +347,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 electionspicMouseClicked(evt);
             }
         });
-        electionspanel.add(electionspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 50));
+        electionspanel.add(electionspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 50));
 
-        jPanel1.add(electionspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 230, 90));
+        jPanel1.add(electionspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 170, 90));
 
         resultspanel.setBackground(new java.awt.Color(255, 255, 255));
         resultspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -382,7 +363,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 resultsMouseClicked(evt);
             }
         });
-        resultspanel.add(results, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 52, 230, 40));
+        resultspanel.add(results, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 52, 170, 40));
 
         resultspic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         resultspic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/RESULTS.png"))); // NOI18N
@@ -392,35 +373,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 resultspicMouseClicked(evt);
             }
         });
-        resultspanel.add(resultspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 226, 50));
+        resultspanel.add(resultspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 170, 50));
 
-        jPanel1.add(resultspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 230, 90));
-
-        logoutpanel.setBackground(new java.awt.Color(255, 255, 255));
-        logoutpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        logout.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        logout.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logout.setText("LOGOUT");
-        logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logout.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                logoutMouseClicked(evt);
-            }
-        });
-        logoutpanel.add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 52, 230, 40));
-
-        logoutpic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logoutpic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/LOGOUT.png"))); // NOI18N
-        logoutpic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logoutpic.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                logoutpicMouseClicked(evt);
-            }
-        });
-        logoutpanel.add(logoutpic, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 3, 230, 50));
-
-        jPanel1.add(logoutpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 560, 230, 90));
+        jPanel1.add(resultspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 170, 90));
 
         settingspanel.setBackground(new java.awt.Color(255, 255, 255));
         settingspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -433,7 +388,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 settingspicMouseClicked(evt);
             }
         });
-        settingspanel.add(settingspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 50));
+        settingspanel.add(settingspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 50));
 
         settings.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         settings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -444,11 +399,35 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 settingsMouseClicked(evt);
             }
         });
-        settingspanel.add(settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 230, 40));
+        settingspanel.add(settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 170, 40));
 
-        jPanel1.add(settingspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 230, 90));
+        jPanel1.add(settingspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 170, 90));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 250, 700));
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("________________________");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 190, -1));
+
+        LOGOUT.setBackground(new java.awt.Color(255, 0, 0));
+        LOGOUT.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        logout.setBackground(new java.awt.Color(255, 0, 0));
+        logout.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        logout.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/LOGOUT1.png"))); // NOI18N
+        logout.setText("LOGOUT");
+        logout.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        logout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                logoutMouseClicked(evt);
+            }
+        });
+        LOGOUT.add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
+
+        jPanel1.add(LOGOUT, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 150, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 700));
 
         setSize(new java.awt.Dimension(1248, 700));
         setLocationRelativeTo(null);
@@ -483,7 +462,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_resultsMouseClicked
 
     private void dashboardpicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashboardpicMouseClicked
-        setPanel(1, dashboardpanel);
+        setPanel(0, dashboardpanel);
         setCursor(dashboardpic);
     }//GEN-LAST:event_dashboardpicMouseClicked
 
@@ -502,19 +481,13 @@ public class VoterMainPanel extends javax.swing.JFrame {
         setCursor(settings);
     }//GEN-LAST:event_settingsMouseClicked
 
-    private void logoutpicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutpicMouseClicked
-        setPanel(4, logoutpanel);
-        setCursor(logoutpic);
-    }//GEN-LAST:event_logoutpicMouseClicked
-
-    private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
-        setPanel(4, logoutpanel);
-        setCursor(logout);
-    }//GEN-LAST:event_logoutMouseClicked
-
     private void IDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IDMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_IDMouseClicked
+
+    private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
+
+    }//GEN-LAST:event_logoutMouseClicked
 
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -572,7 +545,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JPanel INDEX1;
     private javax.swing.JPanel INDEX2;
     private javax.swing.JPanel INDEX3;
-    private javax.swing.JPanel INDEX4;
+    private javax.swing.JPanel LOGOUT;
     private javax.swing.JLabel PROFILE;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
@@ -604,14 +577,13 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel logout;
-    private javax.swing.JPanel logoutpanel;
-    private javax.swing.JLabel logoutpic;
     private javax.swing.JLabel results;
     private javax.swing.JPanel resultspanel;
     private javax.swing.JLabel resultspic;
