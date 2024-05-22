@@ -414,7 +414,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         logout.setBackground(new java.awt.Color(255, 0, 0));
         logout.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         logout.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/LOGOUT1.png"))); // NOI18N
+        logout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/LOGOUT.png"))); // NOI18N
         logout.setText("LOGOUT");
         logout.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
