@@ -105,7 +105,39 @@ public class VoterMainPanel extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         INDEX1 = new javax.swing.JPanel();
+        ElectorateClassifier = new javax.swing.JPanel();
+        SKButton = new javax.swing.JButton();
+        ElectorateLabel = new javax.swing.JLabel();
+        BackPanel = new javax.swing.JPanel();
+        BackButton = new javax.swing.JButton();
+        ElectorateTab = new javax.swing.JTabbedPane();
+        ElectorateButton = new javax.swing.JPanel();
+        MayorButton = new javax.swing.JButton();
+        ViceMayorButton = new javax.swing.JButton();
+        CongressmanButton = new javax.swing.JButton();
+        CityCouncilorButton = new javax.swing.JButton();
+        BarangayCaptainButton = new javax.swing.JButton();
+        BarangayCouncilorsButton = new javax.swing.JButton();
+        MayorTab = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        ViceMayorTab = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        CongressmanTab = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        CityCouncilorTab = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        BarangayCaptainTab = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        BarangayCouncilorTab = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        SKTab = new javax.swing.JPanel();
+        SKChairpersonButton = new javax.swing.JButton();
+        SKKagawadButton = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
+        SKChairpersonTab = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        SKKagawadTab = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
         INDEX2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         INDEX3 = new javax.swing.JPanel();
@@ -261,8 +293,360 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         INDEX1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setText("FORM 2");
-        INDEX1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 81, -1, -1));
+        ElectorateClassifier.setBackground(new java.awt.Color(0, 0, 0));
+
+        SKButton.setBackground(new java.awt.Color(255, 204, 0));
+        SKButton.setForeground(new java.awt.Color(0, 0, 0));
+        SKButton.setText("Sangguniang Kabataan");
+        SKButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SKButtonMouseClicked(evt);
+            }
+        });
+
+        ElectorateLabel.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        ElectorateLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ElectorateLabel.setText("ELECTORATE:");
+
+        javax.swing.GroupLayout ElectorateClassifierLayout = new javax.swing.GroupLayout(ElectorateClassifier);
+        ElectorateClassifier.setLayout(ElectorateClassifierLayout);
+        ElectorateClassifierLayout.setHorizontalGroup(
+            ElectorateClassifierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElectorateClassifierLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(ElectorateLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 600, Short.MAX_VALUE)
+                .addComponent(SKButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
+        );
+        ElectorateClassifierLayout.setVerticalGroup(
+            ElectorateClassifierLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElectorateClassifierLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(SKButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(ElectorateLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        INDEX1.add(ElectorateClassifier, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 50));
+
+        BackPanel.setBackground(new java.awt.Color(0, 0, 0));
+        BackPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        BackButton.setText("Back");
+        BackButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackButtonMouseClicked(evt);
+            }
+        });
+        BackButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackButtonActionPerformed(evt);
+            }
+        });
+        BackPanel.add(BackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 120, 30));
+
+        INDEX1.add(BackPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 50));
+
+        MayorButton.setBackground(new java.awt.Color(0, 0, 102));
+        MayorButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        MayorButton.setText("Mayor");
+        MayorButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MayorButtonMouseClicked(evt);
+            }
+        });
+
+        ViceMayorButton.setBackground(new java.awt.Color(0, 0, 102));
+        ViceMayorButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        ViceMayorButton.setText("Vice Mayor");
+        ViceMayorButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ViceMayorButtonMouseClicked(evt);
+            }
+        });
+
+        CongressmanButton.setBackground(new java.awt.Color(0, 0, 102));
+        CongressmanButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        CongressmanButton.setText("Congressman");
+        CongressmanButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CongressmanButtonMouseClicked(evt);
+            }
+        });
+
+        CityCouncilorButton.setBackground(new java.awt.Color(0, 0, 102));
+        CityCouncilorButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        CityCouncilorButton.setText("City Councilors");
+        CityCouncilorButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CityCouncilorButtonMouseClicked(evt);
+            }
+        });
+
+        BarangayCaptainButton.setBackground(new java.awt.Color(0, 0, 102));
+        BarangayCaptainButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        BarangayCaptainButton.setText("Barangay Captain");
+        BarangayCaptainButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BarangayCaptainButtonMouseClicked(evt);
+            }
+        });
+
+        BarangayCouncilorsButton.setBackground(new java.awt.Color(0, 0, 102));
+        BarangayCouncilorsButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        BarangayCouncilorsButton.setText("Barangay Councilors");
+        BarangayCouncilorsButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BarangayCouncilorsButtonMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ElectorateButtonLayout = new javax.swing.GroupLayout(ElectorateButton);
+        ElectorateButton.setLayout(ElectorateButtonLayout);
+        ElectorateButtonLayout.setHorizontalGroup(
+            ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElectorateButtonLayout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addGroup(ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MayorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CityCouncilorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addGroup(ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BarangayCaptainButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ViceMayorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(65, 65, 65)
+                .addGroup(ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BarangayCouncilorsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CongressmanButton, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 90, Short.MAX_VALUE))
+        );
+        ElectorateButtonLayout.setVerticalGroup(
+            ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ElectorateButtonLayout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addGroup(ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MayorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ViceMayorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CongressmanButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(ElectorateButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BarangayCouncilorsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BarangayCaptainButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CityCouncilorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(118, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("", ElectorateButton);
+
+        jLabel17.setText("MAYOR");
+
+        javax.swing.GroupLayout MayorTabLayout = new javax.swing.GroupLayout(MayorTab);
+        MayorTab.setLayout(MayorTabLayout);
+        MayorTabLayout.setHorizontalGroup(
+            MayorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MayorTabLayout.createSequentialGroup()
+                .addGap(471, 471, 471)
+                .addComponent(jLabel17)
+                .addContainerGap(547, Short.MAX_VALUE))
+        );
+        MayorTabLayout.setVerticalGroup(
+            MayorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MayorTabLayout.createSequentialGroup()
+                .addGap(204, 204, 204)
+                .addComponent(jLabel17)
+                .addContainerGap(395, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("", MayorTab);
+
+        jLabel19.setText("vice mayor");
+
+        javax.swing.GroupLayout ViceMayorTabLayout = new javax.swing.GroupLayout(ViceMayorTab);
+        ViceMayorTab.setLayout(ViceMayorTabLayout);
+        ViceMayorTabLayout.setHorizontalGroup(
+            ViceMayorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ViceMayorTabLayout.createSequentialGroup()
+                .addGap(477, 477, 477)
+                .addComponent(jLabel19)
+                .addContainerGap(525, Short.MAX_VALUE))
+        );
+        ViceMayorTabLayout.setVerticalGroup(
+            ViceMayorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ViceMayorTabLayout.createSequentialGroup()
+                .addGap(241, 241, 241)
+                .addComponent(jLabel19)
+                .addContainerGap(358, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab3", ViceMayorTab);
+
+        jLabel20.setText("congressman");
+
+        javax.swing.GroupLayout CongressmanTabLayout = new javax.swing.GroupLayout(CongressmanTab);
+        CongressmanTab.setLayout(CongressmanTabLayout);
+        CongressmanTabLayout.setHorizontalGroup(
+            CongressmanTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CongressmanTabLayout.createSequentialGroup()
+                .addGap(459, 459, 459)
+                .addComponent(jLabel20)
+                .addContainerGap(530, Short.MAX_VALUE))
+        );
+        CongressmanTabLayout.setVerticalGroup(
+            CongressmanTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CongressmanTabLayout.createSequentialGroup()
+                .addGap(241, 241, 241)
+                .addComponent(jLabel20)
+                .addContainerGap(358, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab4", CongressmanTab);
+
+        jLabel21.setText("city councilor");
+
+        javax.swing.GroupLayout CityCouncilorTabLayout = new javax.swing.GroupLayout(CityCouncilorTab);
+        CityCouncilorTab.setLayout(CityCouncilorTabLayout);
+        CityCouncilorTabLayout.setHorizontalGroup(
+            CityCouncilorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CityCouncilorTabLayout.createSequentialGroup()
+                .addGap(465, 465, 465)
+                .addComponent(jLabel21)
+                .addContainerGap(523, Short.MAX_VALUE))
+        );
+        CityCouncilorTabLayout.setVerticalGroup(
+            CityCouncilorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CityCouncilorTabLayout.createSequentialGroup()
+                .addGap(242, 242, 242)
+                .addComponent(jLabel21)
+                .addContainerGap(357, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab5", CityCouncilorTab);
+
+        jLabel22.setText("barangay captain");
+
+        javax.swing.GroupLayout BarangayCaptainTabLayout = new javax.swing.GroupLayout(BarangayCaptainTab);
+        BarangayCaptainTab.setLayout(BarangayCaptainTabLayout);
+        BarangayCaptainTabLayout.setHorizontalGroup(
+            BarangayCaptainTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BarangayCaptainTabLayout.createSequentialGroup()
+                .addGap(474, 474, 474)
+                .addComponent(jLabel22)
+                .addContainerGap(495, Short.MAX_VALUE))
+        );
+        BarangayCaptainTabLayout.setVerticalGroup(
+            BarangayCaptainTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BarangayCaptainTabLayout.createSequentialGroup()
+                .addGap(265, 265, 265)
+                .addComponent(jLabel22)
+                .addContainerGap(334, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab6", BarangayCaptainTab);
+
+        jLabel23.setText("barangay councilor");
+
+        javax.swing.GroupLayout BarangayCouncilorTabLayout = new javax.swing.GroupLayout(BarangayCouncilorTab);
+        BarangayCouncilorTab.setLayout(BarangayCouncilorTabLayout);
+        BarangayCouncilorTabLayout.setHorizontalGroup(
+            BarangayCouncilorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BarangayCouncilorTabLayout.createSequentialGroup()
+                .addGap(483, 483, 483)
+                .addComponent(jLabel23)
+                .addContainerGap(475, Short.MAX_VALUE))
+        );
+        BarangayCouncilorTabLayout.setVerticalGroup(
+            BarangayCouncilorTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BarangayCouncilorTabLayout.createSequentialGroup()
+                .addGap(268, 268, 268)
+                .addComponent(jLabel23)
+                .addContainerGap(331, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab7", BarangayCouncilorTab);
+
+        SKTab.setBackground(new java.awt.Color(255, 255, 255));
+        SKTab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        SKChairpersonButton.setBackground(new java.awt.Color(255, 204, 0));
+        SKChairpersonButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        SKChairpersonButton.setForeground(new java.awt.Color(0, 0, 0));
+        SKChairpersonButton.setText("SK Chairperson");
+        SKChairpersonButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SKChairpersonButtonMouseClicked(evt);
+            }
+        });
+        SKChairpersonButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SKChairpersonButtonActionPerformed(evt);
+            }
+        });
+        SKTab.add(SKChairpersonButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 377, 207));
+
+        SKKagawadButton.setBackground(new java.awt.Color(255, 204, 0));
+        SKKagawadButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        SKKagawadButton.setForeground(new java.awt.Color(0, 0, 0));
+        SKKagawadButton.setText("SK Kagawad");
+        SKKagawadButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SKKagawadButtonMouseClicked(evt);
+            }
+        });
+        SKTab.add(SKKagawadButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 230, 377, 207));
+
+        jLabel24.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel24.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Sangguniang Kabataan Elections");
+        SKTab.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1060, -1));
+
+        ElectorateTab.addTab("tab8", SKTab);
+
+        jLabel7.setText("sk chairperson");
+
+        javax.swing.GroupLayout SKChairpersonTabLayout = new javax.swing.GroupLayout(SKChairpersonTab);
+        SKChairpersonTab.setLayout(SKChairpersonTabLayout);
+        SKChairpersonTabLayout.setHorizontalGroup(
+            SKChairpersonTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SKChairpersonTabLayout.createSequentialGroup()
+                .addGap(463, 463, 463)
+                .addComponent(jLabel7)
+                .addContainerGap(521, Short.MAX_VALUE))
+        );
+        SKChairpersonTabLayout.setVerticalGroup(
+            SKChairpersonTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SKChairpersonTabLayout.createSequentialGroup()
+                .addGap(246, 246, 246)
+                .addComponent(jLabel7)
+                .addContainerGap(353, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab9", SKChairpersonTab);
+
+        jLabel18.setText("sk kagawad");
+
+        javax.swing.GroupLayout SKKagawadTabLayout = new javax.swing.GroupLayout(SKKagawadTab);
+        SKKagawadTab.setLayout(SKKagawadTabLayout);
+        SKKagawadTabLayout.setHorizontalGroup(
+            SKKagawadTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SKKagawadTabLayout.createSequentialGroup()
+                .addGap(424, 424, 424)
+                .addComponent(jLabel18)
+                .addContainerGap(575, Short.MAX_VALUE))
+        );
+        SKKagawadTabLayout.setVerticalGroup(
+            SKKagawadTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SKKagawadTabLayout.createSequentialGroup()
+                .addGap(276, 276, 276)
+                .addComponent(jLabel18)
+                .addContainerGap(323, Short.MAX_VALUE))
+        );
+
+        ElectorateTab.addTab("tab10", SKKagawadTab);
+
+        INDEX1.add(ElectorateTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 650));
 
         jTabbedPane1.addTab("", INDEX1);
 
@@ -444,11 +828,23 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private void electionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electionsMouseClicked
         setPanel(1, electionspanel);
         setCursor(elections);
+        ElectorateTab.setSelectedIndex(0);
+        ElectorateLabel.setVisible(true);
+        ElectorateClassifier.setVisible(true);
+        ElectorateClassifier.setEnabled(true);
+        BackPanel.setEnabled(false);
+        BackPanel.setVisible(false);
     }//GEN-LAST:event_electionsMouseClicked
 
     private void electionspicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electionspicMouseClicked
         setPanel(1, electionspanel);
         setCursor(electionspic);
+        ElectorateTab.setSelectedIndex(0);
+        ElectorateClassifier.setVisible(true);
+        ElectorateClassifier.setEnabled(true);
+        ElectorateLabel.setVisible(true);
+        BackPanel.setEnabled(false);
+        BackPanel.setVisible(false);
     }//GEN-LAST:event_electionspicMouseClicked
 
     private void resultspicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_resultspicMouseClicked
@@ -488,6 +884,113 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
 
     }//GEN-LAST:event_logoutMouseClicked
+
+    private void MayorButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MayorButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(1);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_MayorButtonMouseClicked
+
+    private void ViceMayorButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViceMayorButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(2);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_ViceMayorButtonMouseClicked
+
+    private void CongressmanButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CongressmanButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(3);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_CongressmanButtonMouseClicked
+
+    private void CityCouncilorButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CityCouncilorButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(4);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_CityCouncilorButtonMouseClicked
+
+    private void BarangayCaptainButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BarangayCaptainButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(5);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_BarangayCaptainButtonMouseClicked
+
+    private void BarangayCouncilorsButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BarangayCouncilorsButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(6);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_BarangayCouncilorsButtonMouseClicked
+
+    private void BackButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(0);
+        BackPanel.setEnabled(false);
+        BackPanel.setVisible(false);
+        ElectorateLabel.setVisible(true);
+        ElectorateClassifier.setEnabled(true);
+        ElectorateClassifier.setVisible(true);
+        ElectorateLabel.setVisible(true);
+    }//GEN-LAST:event_BackButtonMouseClicked
+
+    private void SKChairpersonButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SKChairpersonButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SKChairpersonButtonActionPerformed
+
+    private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackButtonActionPerformed
+
+    private void SKButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SKButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(7);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_SKButtonMouseClicked
+
+    private void SKChairpersonButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SKChairpersonButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(8);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_SKChairpersonButtonMouseClicked
+
+    private void SKKagawadButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SKKagawadButtonMouseClicked
+        // TODO add your handling code here:
+        ElectorateTab.setSelectedIndex(9);
+        ElectorateClassifier.setEnabled(false);
+        ElectorateClassifier.setVisible(false);
+        ElectorateLabel.setVisible(false);
+        BackPanel.setEnabled(true);
+        BackPanel.setVisible(true);
+    }//GEN-LAST:event_SKKagawadButtonMouseClicked
 
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -540,13 +1043,37 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BackButton;
+    private javax.swing.JPanel BackPanel;
+    private javax.swing.JButton BarangayCaptainButton;
+    private javax.swing.JPanel BarangayCaptainTab;
+    private javax.swing.JPanel BarangayCouncilorTab;
+    private javax.swing.JButton BarangayCouncilorsButton;
+    private javax.swing.JButton CityCouncilorButton;
+    private javax.swing.JPanel CityCouncilorTab;
+    private javax.swing.JButton CongressmanButton;
+    private javax.swing.JPanel CongressmanTab;
+    private javax.swing.JPanel ElectorateButton;
+    private javax.swing.JPanel ElectorateClassifier;
+    private javax.swing.JLabel ElectorateLabel;
+    private javax.swing.JTabbedPane ElectorateTab;
     private javax.swing.JLabel ID;
     private javax.swing.JPanel INDEX0;
     private javax.swing.JPanel INDEX1;
     private javax.swing.JPanel INDEX2;
     private javax.swing.JPanel INDEX3;
     private javax.swing.JPanel LOGOUT;
+    private javax.swing.JButton MayorButton;
+    private javax.swing.JPanel MayorTab;
     private javax.swing.JLabel PROFILE;
+    private javax.swing.JButton SKButton;
+    private javax.swing.JButton SKChairpersonButton;
+    private javax.swing.JPanel SKChairpersonTab;
+    private javax.swing.JButton SKKagawadButton;
+    private javax.swing.JPanel SKKagawadTab;
+    private javax.swing.JPanel SKTab;
+    private javax.swing.JButton ViceMayorButton;
+    private javax.swing.JPanel ViceMayorTab;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JLabel dashboard;
@@ -564,7 +1091,15 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
