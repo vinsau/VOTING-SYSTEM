@@ -126,84 +126,89 @@ public class VoterMainPanel extends javax.swing.JFrame {
         INDEX2 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         INDEX3 = new javax.swing.JPanel();
-        SETTINGSTAB = new javax.swing.JTabbedPane();
-        MAIN = new javax.swing.JPanel();
-        CONTAINER1 = new javax.swing.JPanel();
+        jPanel8 = new javax.swing.JPanel();
         SecurityPanel = new javax.swing.JPanel();
         SECURITYICON = new javax.swing.JLabel();
         SECURITYLABEL = new javax.swing.JLabel();
         AccountInformation = new javax.swing.JPanel();
-        INFORMATION = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         ACCOUNTINFORMATIONICON = new javax.swing.JLabel();
-        ACCOUNT = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         PrivacyAndPolicy = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
         PRIVACYANDPOLICYARROW = new javax.swing.JLabel();
-        PRIVACYNPOLICYLABEL = new javax.swing.JLabel();
-        PRIVACYNPOLICYICON = new javax.swing.JLabel();
         Feedback = new javax.swing.JPanel();
-        FEEDBACKLABEL = new javax.swing.JLabel();
-        FEEDBACKICON = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         FEEDBACKARROW = new javax.swing.JLabel();
-        SECURITY = new javax.swing.JPanel();
-        CHANGEPASSWORDPANEL = new javax.swing.JPanel();
-        LABEL1 = new javax.swing.JLabel();
-        CURRPASSWORDTEXTFIELD = new javax.swing.JTextField();
-        NEWPASSWORDLABEL = new javax.swing.JLabel();
-        NEWPASSWORDTEXTFIELD = new javax.swing.JTextField();
-        CONFIRMPASSWORDLABEL = new javax.swing.JLabel();
-        CONFIRMPASSWORDTEXTFIELD = new javax.swing.JTextField();
-        CHANGEPASSCONFIRMBUTTON = new javax.swing.JButton();
-        CHANGEPASSPANEL1 = new javax.swing.JPanel();
-        CHANGEPASSWORDLABEL = new javax.swing.JLabel();
-        CHANGESECUPANEL1 = new javax.swing.JPanel();
-        CHANGESECURITYQUESTIONLABEL = new javax.swing.JLabel();
+        VotingInstructions = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        VOTINGINSTRUCTIONSARROW = new javax.swing.JLabel();
+        SECURITYi4 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        CHANGEPASSPANEL = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        CHANGESECUPANEL = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        ACCOUNTINFORMATIONi5 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        SEPARATORLINE = new javax.swing.JPanel();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        PRIVACYANDPOLICYi6 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jLabel55 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
         BACKBUTTON = new javax.swing.JLabel();
-        ACCOUNTINFORMATION = new javax.swing.JPanel();
-        HORIZONTALSEPARATOR = new javax.swing.JLabel();
-        PERSONALINFORMATIONLABEL = new javax.swing.JLabel();
-        SEPARATORLINE1 = new javax.swing.JPanel();
-        PERSONALINFORMATIONCONTAINER = new javax.swing.JPanel();
-        FULLNAMELABEL = new javax.swing.JLabel();
-        BIRTHDATELABEL = new javax.swing.JLabel();
-        GENDERLABEL = new javax.swing.JLabel();
-        EMAILADDRESSLABEL = new javax.swing.JLabel();
-        CITIZENSHIPLABEL = new javax.swing.JLabel();
-        CIVILSTATUSLABEL = new javax.swing.JLabel();
-        BACKBUTTON2 = new javax.swing.JLabel();
-        PRIVACYANDPOLICY = new javax.swing.JPanel();
-        BACKBUTTON1 = new javax.swing.JLabel();
-        PRIVACYANDPOLICYCONTENTPANE = new javax.swing.JScrollPane();
-        CONTENT = new javax.swing.JTextPane();
-        PRIVACYANDPOLICYHEADER = new javax.swing.JPanel();
-        AEMTRAICON = new javax.swing.JLabel();
-        PRIVACYANDPOLICYLABEL = new javax.swing.JLabel();
-        PRIVACYANDPOLICYBACKGROUND = new javax.swing.JLabel();
-        FEEDBACK = new javax.swing.JPanel();
-        BACKBUTTON3 = new javax.swing.JLabel();
-        FEEDBACKPANEL = new javax.swing.JPanel();
-        FEEDBACKHEADER = new javax.swing.JLabel();
-        FEEDBACKSUBHEADER2 = new javax.swing.JLabel();
-        FEEDBACKSUBHEADER1 = new javax.swing.JLabel();
-        NAMETEXTFIELD1 = new javax.swing.JTextField();
-        EMAILTEXTFIELD = new javax.swing.JTextField();
-        MESSAGETEXTFIELD = new javax.swing.JTextField();
-        MESSAGE = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        SENDFEEDBACKBUTTON = new javax.swing.JButton();
-        FEEDBACKHORIZONTALSEPARATOR = new javax.swing.JPanel();
-        FEEDBACKPANELBACKGROUND = new javax.swing.JLabel();
-        CHANGESECURITY = new javax.swing.JPanel();
-        CHANGEPASSWORDPANEL2 = new javax.swing.JPanel();
-        CHANGEPASSWORDLABEL2 = new javax.swing.JLabel();
-        CHANGESECURITYQUESTIONPANEL2 = new javax.swing.JPanel();
-        CHANGESECURITYQUESTIONLABEL2 = new javax.swing.JLabel();
-        CHANGESECURITYPANEL = new javax.swing.JPanel();
-        NEWSECURITYQUESTIONLABEL = new javax.swing.JLabel();
-        NEWSECURITYQUESTIONCOMBOBOX = new javax.swing.JComboBox<>();
-        CHANGESECURITYQUESTIONCONFIRMBUTTON = new javax.swing.JButton();
-        NEWANSWERTEXTFIELD = new javax.swing.JTextField();
-        BACKBUTTON4 = new javax.swing.JLabel();
-        OPTIONS = new javax.swing.JPanel();
+        FEEDBACKi7 = new javax.swing.JPanel();
+        jLabel54 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        VOTINGINSTRUCTIONSi8 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        CHANGESECUPAGEi9 = new javax.swing.JPanel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel42 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jLabel53 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         PROFILE = new javax.swing.JLabel();
         ID = new javax.swing.JLabel();
         dashboardpanel = new javax.swing.JPanel();
@@ -371,9 +376,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         INDEX3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        MAIN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        CONTAINER1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         SecurityPanel.setBackground(new java.awt.Color(255, 255, 255));
         SecurityPanel.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -395,14 +398,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
         SECURITYLABEL.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
         SECURITYLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SECURITYLABEL.setText(" SECURITY");
-        SECURITYLABEL.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SECURITYLABELMouseClicked(evt);
-            }
-        });
         SecurityPanel.add(SECURITYLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 260, 100));
 
-        CONTAINER1.add(SecurityPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 260, 210));
+        jPanel8.add(SecurityPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 260, 210));
 
         AccountInformation.setBackground(new java.awt.Color(255, 255, 255));
         AccountInformation.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -412,15 +410,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         AccountInformation.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        INFORMATION.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        INFORMATION.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        INFORMATION.setText("INFORMATION");
-        INFORMATION.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                INFORMATIONMouseClicked(evt);
-            }
-        });
-        AccountInformation.add(INFORMATION, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, 60));
+        jLabel18.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("INFORMATION");
+        AccountInformation.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, 60));
 
         ACCOUNTINFORMATIONICON.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ACCOUNTINFORMATIONICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ACCOUNTINFORMATION.png"))); // NOI18N
@@ -431,19 +424,14 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         AccountInformation.add(ACCOUNTINFORMATIONICON, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 6, 260, 140));
 
-        ACCOUNT.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
-        ACCOUNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ACCOUNT.setText("ACCOUNT");
-        ACCOUNT.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ACCOUNTMouseClicked(evt);
-            }
-        });
-        AccountInformation.add(ACCOUNT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 86, 260, 120));
+        jLabel27.setFont(new java.awt.Font("Arial", 1, 25)); // NOI18N
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText("ACCOUNT");
+        AccountInformation.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 86, 260, 120));
 
-        CONTAINER1.add(AccountInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, 260, 210));
+        jPanel8.add(AccountInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 50, 260, 210));
 
-        MAIN.add(CONTAINER1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 290));
+        INDEX3.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 290));
 
         PrivacyAndPolicy.setBackground(new java.awt.Color(255, 255, 255));
         PrivacyAndPolicy.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -451,7 +439,11 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 PrivacyAndPolicyMouseClicked(evt);
             }
         });
-        PrivacyAndPolicy.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel23.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel23.setText("PRIVACY AND POLICY");
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/PRIVACY.png"))); // NOI18N
 
         PRIVACYANDPOLICYARROW.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PRIVACYANDPOLICYARROW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ARROW.png"))); // NOI18N
@@ -460,16 +452,32 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 PRIVACYANDPOLICYARROWMouseClicked(evt);
             }
         });
-        PrivacyAndPolicy.add(PRIVACYANDPOLICYARROW, new org.netbeans.lib.awtextra.AbsoluteConstraints(764, 0, -1, 80));
 
-        PRIVACYNPOLICYLABEL.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        PRIVACYNPOLICYLABEL.setText("PRIVACY AND POLICY");
-        PrivacyAndPolicy.add(PRIVACYNPOLICYLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 0, 308, 80));
+        javax.swing.GroupLayout PrivacyAndPolicyLayout = new javax.swing.GroupLayout(PrivacyAndPolicy);
+        PrivacyAndPolicy.setLayout(PrivacyAndPolicyLayout);
+        PrivacyAndPolicyLayout.setHorizontalGroup(
+            PrivacyAndPolicyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PrivacyAndPolicyLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 384, Short.MAX_VALUE)
+                .addComponent(PRIVACYANDPOLICYARROW)
+                .addGap(20, 20, 20))
+        );
+        PrivacyAndPolicyLayout.setVerticalGroup(
+            PrivacyAndPolicyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PrivacyAndPolicyLayout.createSequentialGroup()
+                .addGroup(PrivacyAndPolicyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PrivacyAndPolicyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(PRIVACYANDPOLICYARROW, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
-        PRIVACYNPOLICYICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/PRIVACY.png"))); // NOI18N
-        PrivacyAndPolicy.add(PRIVACYNPOLICYICON, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, -1, 80));
-
-        MAIN.add(PrivacyAndPolicy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 800, 80));
+        INDEX3.add(PrivacyAndPolicy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 800, 60));
 
         Feedback.setBackground(new java.awt.Color(255, 255, 255));
         Feedback.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -478,10 +486,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
             }
         });
 
-        FEEDBACKLABEL.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        FEEDBACKLABEL.setText("HOW CAN WE IMPROVE?");
+        jLabel21.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel21.setText("HOW CAN WE IMPROVE?");
 
-        FEEDBACKICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/FEEDBACK.png"))); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/FEEDBACK.png"))); // NOI18N
 
         FEEDBACKARROW.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         FEEDBACKARROW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ARROW.png"))); // NOI18N
@@ -497,9 +505,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
             FeedbackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FeedbackLayout.createSequentialGroup()
                 .addGap(11, 11, 11)
-                .addComponent(FEEDBACKICON)
+                .addComponent(jLabel20)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(FEEDBACKLABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 387, Short.MAX_VALUE)
                 .addComponent(FEEDBACKARROW)
                 .addGap(18, 18, 18))
@@ -509,482 +517,523 @@ public class VoterMainPanel extends javax.swing.JFrame {
             .addGroup(FeedbackLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(FeedbackLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(FEEDBACKICON, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)
-                    .addComponent(FEEDBACKLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-            .addComponent(FEEDBACKARROW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)
+                    .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(FeedbackLayout.createSequentialGroup()
+                .addComponent(FEEDBACKARROW, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        MAIN.add(Feedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 800, 80));
+        INDEX3.add(Feedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 800, 60));
 
-        SETTINGSTAB.addTab("tab1", MAIN);
-
-        SECURITY.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        CHANGEPASSWORDPANEL.setBackground(new java.awt.Color(255, 255, 255));
-        CHANGEPASSWORDPANEL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        CHANGEPASSWORDPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        LABEL1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        LABEL1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        LABEL1.setText("CURRENT PASSWORD");
-        CHANGEPASSWORDPANEL.add(LABEL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 260, 30));
-        CHANGEPASSWORDPANEL.add(CURRPASSWORDTEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 260, 40));
-
-        NEWPASSWORDLABEL.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        NEWPASSWORDLABEL.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        NEWPASSWORDLABEL.setText("NEW PASSWORD");
-        CHANGEPASSWORDPANEL.add(NEWPASSWORDLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 260, 20));
-        CHANGEPASSWORDPANEL.add(NEWPASSWORDTEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 260, 40));
-
-        CONFIRMPASSWORDLABEL.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        CONFIRMPASSWORDLABEL.setText("CONFIRM PASSWORD");
-        CHANGEPASSWORDPANEL.add(CONFIRMPASSWORDLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 260, 30));
-        CHANGEPASSWORDPANEL.add(CONFIRMPASSWORDTEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, 40));
-
-        CHANGEPASSCONFIRMBUTTON.setBackground(new java.awt.Color(25, 18, 211));
-        CHANGEPASSCONFIRMBUTTON.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        CHANGEPASSCONFIRMBUTTON.setForeground(new java.awt.Color(255, 255, 255));
-        CHANGEPASSCONFIRMBUTTON.setText("CONFIRM");
-        CHANGEPASSWORDPANEL.add(CHANGEPASSCONFIRMBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, 130, 40));
-
-        SECURITY.add(CHANGEPASSWORDPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 900, 490));
-
-        CHANGEPASSPANEL1.setBackground(new java.awt.Color(51, 51, 255));
-        CHANGEPASSPANEL1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        CHANGEPASSPANEL1.addMouseListener(new java.awt.event.MouseAdapter() {
+        VotingInstructions.setBackground(new java.awt.Color(255, 255, 255));
+        VotingInstructions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CHANGEPASSPANEL1MouseClicked(evt);
+                VotingInstructionsMouseClicked(evt);
             }
         });
-        CHANGEPASSPANEL1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CHANGEPASSWORDLABEL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        CHANGEPASSWORDLABEL.setForeground(new java.awt.Color(255, 255, 255));
-        CHANGEPASSWORDLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CHANGEPASSWORDLABEL.setText("CHANGE PASSWORD");
-        CHANGEPASSPANEL1.add(CHANGEPASSWORDLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 80));
+        jLabel22.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel22.setText("VOTING INSTRUCTIONS");
 
-        SECURITY.add(CHANGEPASSPANEL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 450, 80));
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/INSTRUCTIONS.png"))); // NOI18N
 
-        CHANGESECUPANEL1.setBackground(new java.awt.Color(0, 0, 102));
-        CHANGESECUPANEL1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        CHANGESECUPANEL1.addMouseListener(new java.awt.event.MouseAdapter() {
+        VOTINGINSTRUCTIONSARROW.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        VOTINGINSTRUCTIONSARROW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ARROW.png"))); // NOI18N
+        VOTINGINSTRUCTIONSARROW.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CHANGESECUPANEL1MouseClicked(evt);
+                VOTINGINSTRUCTIONSARROWMouseClicked(evt);
             }
         });
-        CHANGESECUPANEL1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CHANGESECURITYQUESTIONLABEL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        CHANGESECURITYQUESTIONLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CHANGESECURITYQUESTIONLABEL.setText("CHANGE SECURITY QUESTION");
-        CHANGESECUPANEL1.add(CHANGESECURITYQUESTIONLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 448, 78));
+        javax.swing.GroupLayout VotingInstructionsLayout = new javax.swing.GroupLayout(VotingInstructions);
+        VotingInstructions.setLayout(VotingInstructionsLayout);
+        VotingInstructionsLayout.setHorizontalGroup(
+            VotingInstructionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VotingInstructionsLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 420, Short.MAX_VALUE)
+                .addComponent(VOTINGINSTRUCTIONSARROW)
+                .addGap(17, 17, 17))
+        );
+        VotingInstructionsLayout.setVerticalGroup(
+            VotingInstructionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VotingInstructionsLayout.createSequentialGroup()
+                .addGroup(VotingInstructionsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(VotingInstructionsLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(VotingInstructionsLayout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel22))
+                    .addComponent(VOTINGINSTRUCTIONSARROW, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
-        SECURITY.add(CHANGESECUPANEL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 450, 80));
+        INDEX3.add(VotingInstructions, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 530, 800, 60));
+
+        jTabbedPane1.addTab("", INDEX3);
+
+        SECURITYi4.setBackground(new java.awt.Color(153, 153, 153));
+        SECURITYi4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel39.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel39.setText("CURRENT PASSWORD");
+        jPanel15.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 260, 30));
+        jPanel15.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 260, 40));
+
+        jLabel40.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel40.setText("NEW PASSWORD");
+        jPanel15.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 260, 20));
+        jPanel15.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 260, 40));
+
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel41.setText("CONFIRM PASSWORD");
+        jPanel15.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 260, 30));
+        jPanel15.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 260, 40));
+
+        jButton2.setBackground(new java.awt.Color(25, 18, 211));
+        jButton2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("CONFIRM");
+        jPanel15.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 380, 130, 40));
+
+        SECURITYi4.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 900, 490));
+
+        CHANGEPASSPANEL.setBackground(new java.awt.Color(51, 51, 255));
+        CHANGEPASSPANEL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        CHANGEPASSPANEL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CHANGEPASSPANELMouseClicked(evt);
+            }
+        });
+        CHANGEPASSPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel38.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel38.setText("CHANGE PASSWORD");
+        CHANGEPASSPANEL.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 80));
+
+        SECURITYi4.add(CHANGEPASSPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 450, 80));
+
+        CHANGESECUPANEL.setBackground(new java.awt.Color(0, 0, 102));
+        CHANGESECUPANEL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        CHANGESECUPANEL.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CHANGESECUPANELMouseClicked(evt);
+            }
+        });
+        CHANGESECUPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel50.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel50.setText("CHANGE SECURITY QUESTION");
+        CHANGESECUPANEL.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 448, 78));
+
+        SECURITYi4.add(CHANGESECUPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 450, 80));
+
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
+        jLabel52.setText("BACK");
+        jLabel52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel52MouseClicked(evt);
+            }
+        });
+        SECURITYi4.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 130, 50));
+
+        jTabbedPane1.addTab("", SECURITYi4);
+
+        ACCOUNTINFORMATIONi5.setBackground(new java.awt.Color(255, 255, 255));
+        ACCOUNTINFORMATIONi5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel9.setText("_____________________________________________________________________________________________________________________________________________");
+        ACCOUNTINFORMATIONi5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 1000, -1));
+
+        jLabel43.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel43.setText("PERSONAL INFORMATION");
+        ACCOUNTINFORMATIONi5.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 200, -1));
+
+        SEPARATORLINE.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout SEPARATORLINELayout = new javax.swing.GroupLayout(SEPARATORLINE);
+        SEPARATORLINE.setLayout(SEPARATORLINELayout);
+        SEPARATORLINELayout.setHorizontalGroup(
+            SEPARATORLINELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        SEPARATORLINELayout.setVerticalGroup(
+            SEPARATORLINELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+
+        ACCOUNTINFORMATIONi5.add(SEPARATORLINE, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 3, 400));
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel45.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel45.setText("FULL NAME:");
+
+        jLabel46.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel46.setText("BIRTHDATE:");
+
+        jLabel47.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel47.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel47.setText("GENDER:");
+
+        jLabel48.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setText("EMAIL ADDRESS:");
+
+        jLabel49.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel49.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel49.setText("CITIZENSHIP:");
+
+        jLabel44.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
+        jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel44.setText("CIVIL STATUS:");
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel48, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+            .addComponent(jLabel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap(68, Short.MAX_VALUE)
+                .addComponent(jLabel45)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel46)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel47)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel48)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel49)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel44)
+                .addContainerGap())
+        );
+
+        ACCOUNTINFORMATIONi5.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 310, 350));
+
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
+        jLabel51.setText("BACK");
+        jLabel51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel51MouseClicked(evt);
+            }
+        });
+        ACCOUNTINFORMATIONi5.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 100, -1));
+
+        jTabbedPane1.addTab("tab6", ACCOUNTINFORMATIONi5);
+
+        PRIVACYANDPOLICYi6.setBackground(new java.awt.Color(255, 255, 255));
+        PRIVACYANDPOLICYi6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jScrollPane2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jTextPane1.setEditable(false);
+        jTextPane1.setBorder(null);
+        jTextPane1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jTextPane1.setText("At AEMTRA, we are committed to protecting the privacy of our users. This Privacy Policy outlines the types of personal information we collect, how we use it, and how we safeguard it.\n\nInformation We Collect:\n\n1. Voter Information: When users participate in our voting poll, we collect limited personal information such as name and email address to ensure the integrity of the voting process. We do not collect any sensitive personal information such as social security numbers or financial data.\n\n2. Voting Data: We collect data related to votes cast in the poll, including the choices made by users. This data is anonymized and aggregated to analyze overall trends and results.\n\nUse of Information:\n\n1. Ensuring One Vote Per Person: We use the collected voter information to verify the identity of users and prevent multiple votes from the same individual. This helps maintain the integrity and fairness of the voting process.\n\n2. Communications: We may use the provided email address to communicate with users regarding their participation in the voting poll, such as confirmation of their vote or updates about the poll results.\n\n3. Improving Our Services: Aggregated voting data may be analyzed to improve our services, enhance the user experience, and make informed decisions for future projects.\n\nData Security:\n\n1. Secure Storage: We employ industry-standard security measures to protect the personal information and voting data collected through our platform. This includes encryption, access controls, and regular security audits.\n\n2. Limited Access: Access to personal information and voting data is restricted to authorized personnel who require it to perform their duties. We do not sell, rent, or share personal information with third parties for marketing purposes.\n\nUser Rights:\n\n1. Access and Correction: Users have the right to access their personal information and request corrections if necessary. They can contact us at [contact email] to exercise these rights.\n\n2. Data Deletion: Users can request the deletion of their personal information from our systems by contacting us at aemtracorps@gmail.com. However, please note that this may result in the inability to verify their identity for future voting polls.\n\nChanges to this Privacy Policy:\n\nWe reserve the right to update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We encourage users to review this policy periodically for any updates.\n\nContact Us:\n\nIf you have any questions or concerns about this Privacy Policy or our data practices, please contact us at aemtracorps@gmail.com.");
+        jTextPane1.setToolTipText("");
+        jTextPane1.setCaretPosition(1);
+        jTextPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jScrollPane2.setViewportView(jTextPane1);
+
+        jPanel11.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 960, 500));
+
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
+        jLabel55.setText("BACK");
+        jLabel55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel55MouseClicked(evt);
+            }
+        });
+        jPanel11.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 130, 60));
+
+        jPanel10.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ADMIN PORTAL.png"))); // NOI18N
+        jPanel10.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 150));
+
+        jLabel33.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel33.setFont(new java.awt.Font("Arial", 1, 60)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText("PRIVACY AND POLICY");
+        jPanel10.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 1030, 150));
+
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEWALL.jpg"))); // NOI18N
+        jLabel32.setText("jLabel32");
+        jPanel10.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 160));
+
+        jPanel11.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1070, 160));
 
         BACKBUTTON.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BACKBUTTON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
         BACKBUTTON.setText("BACK");
-        BACKBUTTON.addMouseListener(new java.awt.event.MouseAdapter() {
+        jPanel11.add(BACKBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 130, 50));
+
+        PRIVACYANDPOLICYi6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 650));
+
+        jTabbedPane1.addTab("tab7", PRIVACYANDPOLICYi6);
+
+        FEEDBACKi7.setBackground(new java.awt.Color(204, 255, 204));
+        FEEDBACKi7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
+        jLabel54.setText("BACK");
+        jLabel54.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BACKBUTTONMouseClicked(evt);
+                jLabel54MouseClicked(evt);
             }
         });
-        SECURITY.add(BACKBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 10, 120, 40));
+        FEEDBACKi7.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 130, 50));
 
-        SETTINGSTAB.addTab("tab2", SECURITY);
+        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ACCOUNTINFORMATION.setBackground(new java.awt.Color(255, 255, 255));
-        ACCOUNTINFORMATION.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel17.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("FEEDBACK");
+        jPanel9.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 0, 480, 80));
 
-        HORIZONTALSEPARATOR.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        HORIZONTALSEPARATOR.setText("_____________________________________________________________________________________________________________________________________________");
-        ACCOUNTINFORMATION.add(HORIZONTALSEPARATOR, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 1000, -1));
+        jLabel29.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText("system, so we'd love to hear your feedback.");
+        jPanel9.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 350, -1));
 
-        PERSONALINFORMATIONLABEL.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        PERSONALINFORMATIONLABEL.setText("PERSONAL INFORMATION");
-        ACCOUNTINFORMATION.add(PERSONALINFORMATIONLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 200, -1));
+        jLabel30.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("We would love to know your thought of your experience at voting");
+        jPanel9.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 350, -1));
 
-        SEPARATORLINE1.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout SEPARATORLINE1Layout = new javax.swing.GroupLayout(SEPARATORLINE1);
-        SEPARATORLINE1.setLayout(SEPARATORLINE1Layout);
-        SEPARATORLINE1Layout.setHorizontalGroup(
-            SEPARATORLINE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        SEPARATORLINE1Layout.setVerticalGroup(
-            SEPARATORLINE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-
-        ACCOUNTINFORMATION.add(SEPARATORLINE1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 3, 400));
-
-        PERSONALINFORMATIONCONTAINER.setBackground(new java.awt.Color(255, 255, 255));
-
-        FULLNAMELABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        FULLNAMELABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FULLNAMELABEL.setText("FULL NAME:");
-
-        BIRTHDATELABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        BIRTHDATELABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BIRTHDATELABEL.setText("BIRTHDATE:");
-
-        GENDERLABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        GENDERLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        GENDERLABEL.setText("GENDER:");
-
-        EMAILADDRESSLABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        EMAILADDRESSLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EMAILADDRESSLABEL.setText("EMAIL ADDRESS:");
-
-        CITIZENSHIPLABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        CITIZENSHIPLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CITIZENSHIPLABEL.setText("CITIZENSHIP:");
-
-        CIVILSTATUSLABEL.setFont(new java.awt.Font("Arial", 0, 26)); // NOI18N
-        CIVILSTATUSLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CIVILSTATUSLABEL.setText("CIVIL STATUS:");
-
-        javax.swing.GroupLayout PERSONALINFORMATIONCONTAINERLayout = new javax.swing.GroupLayout(PERSONALINFORMATIONCONTAINER);
-        PERSONALINFORMATIONCONTAINER.setLayout(PERSONALINFORMATIONCONTAINERLayout);
-        PERSONALINFORMATIONCONTAINERLayout.setHorizontalGroup(
-            PERSONALINFORMATIONCONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BIRTHDATELABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(FULLNAMELABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(GENDERLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(EMAILADDRESSLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
-            .addComponent(CITIZENSHIPLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(CIVILSTATUSLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        PERSONALINFORMATIONCONTAINERLayout.setVerticalGroup(
-            PERSONALINFORMATIONCONTAINERLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PERSONALINFORMATIONCONTAINERLayout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
-                .addComponent(FULLNAMELABEL)
-                .addGap(18, 18, 18)
-                .addComponent(BIRTHDATELABEL)
-                .addGap(18, 18, 18)
-                .addComponent(GENDERLABEL)
-                .addGap(18, 18, 18)
-                .addComponent(EMAILADDRESSLABEL)
-                .addGap(18, 18, 18)
-                .addComponent(CITIZENSHIPLABEL)
-                .addGap(18, 18, 18)
-                .addComponent(CIVILSTATUSLABEL)
-                .addContainerGap())
-        );
-
-        ACCOUNTINFORMATION.add(PERSONALINFORMATIONCONTAINER, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 310, 350));
-
-        BACKBUTTON2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BACKBUTTON2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
-        BACKBUTTON2.setText("BACK");
-        BACKBUTTON2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BACKBUTTON2MouseClicked(evt);
-            }
-        });
-        ACCOUNTINFORMATION.add(BACKBUTTON2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 100, -1));
-
-        SETTINGSTAB.addTab("tab3", ACCOUNTINFORMATION);
-
-        PRIVACYANDPOLICY.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        BACKBUTTON1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BACKBUTTON1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
-        BACKBUTTON1.setText("BACK");
-        BACKBUTTON1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BACKBUTTON1MouseClicked(evt);
-            }
-        });
-        PRIVACYANDPOLICY.add(BACKBUTTON1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 10, 120, 50));
-
-        PRIVACYANDPOLICYCONTENTPANE.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        CONTENT.setEditable(false);
-        CONTENT.setBorder(null);
-        CONTENT.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        CONTENT.setText("At AEMTRA, we are committed to protecting the privacy of our users. This Privacy Policy outlines the types of personal information we collect, how we use it, and how we safeguard it.\n\nInformation We Collect:\n\n1. Voter Information: When users participate in our voting poll, we collect limited personal information such as name and email address to ensure the integrity of the voting process. We do not collect any sensitive personal information such as social security numbers or financial data.\n\n2. Voting Data: We collect data related to votes cast in the poll, including the choices made by users. This data is anonymized and aggregated to analyze overall trends and results.\n\nUse of Information:\n\n1. Ensuring One Vote Per Person: We use the collected voter information to verify the identity of users and prevent multiple votes from the same individual. This helps maintain the integrity and fairness of the voting process.\n\n2. Communications: We may use the provided email address to communicate with users regarding their participation in the voting poll, such as confirmation of their vote or updates about the poll results.\n\n3. Improving Our Services: Aggregated voting data may be analyzed to improve our services, enhance the user experience, and make informed decisions for future projects.\n\nData Security:\n\n1. Secure Storage: We employ industry-standard security measures to protect the personal information and voting data collected through our platform. This includes encryption, access controls, and regular security audits.\n\n2. Limited Access: Access to personal information and voting data is restricted to authorized personnel who require it to perform their duties. We do not sell, rent, or share personal information with third parties for marketing purposes.\n\nUser Rights:\n\n1. Access and Correction: Users have the right to access their personal information and request corrections if necessary. They can contact us at [contact email] to exercise these rights.\n\n2. Data Deletion: Users can request the deletion of their personal information from our systems by contacting us at aemtracorps@gmail.com. However, please note that this may result in the inability to verify their identity for future voting polls.\n\nChanges to this Privacy Policy:\n\nWe reserve the right to update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We encourage users to review this policy periodically for any updates.\n\nContact Us:\n\nIf you have any questions or concerns about this Privacy Policy or our data practices, please contact us at aemtracorps@gmail.com.");
-        CONTENT.setToolTipText("");
-        CONTENT.setCaretPosition(1);
-        CONTENT.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        PRIVACYANDPOLICYCONTENTPANE.setViewportView(CONTENT);
-
-        PRIVACYANDPOLICY.add(PRIVACYANDPOLICYCONTENTPANE, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 960, 500));
-
-        PRIVACYANDPOLICYHEADER.setBackground(new java.awt.Color(153, 255, 255));
-        PRIVACYANDPOLICYHEADER.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        PRIVACYANDPOLICYHEADER.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        AEMTRAICON.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AEMTRAICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/ADMIN PORTAL.png"))); // NOI18N
-        PRIVACYANDPOLICYHEADER.add(AEMTRAICON, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 200, 150));
-
-        PRIVACYANDPOLICYLABEL.setBackground(new java.awt.Color(255, 255, 255));
-        PRIVACYANDPOLICYLABEL.setFont(new java.awt.Font("Arial", 1, 60)); // NOI18N
-        PRIVACYANDPOLICYLABEL.setForeground(new java.awt.Color(255, 255, 255));
-        PRIVACYANDPOLICYLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PRIVACYANDPOLICYLABEL.setText("PRIVACY AND POLICY");
-        PRIVACYANDPOLICYHEADER.add(PRIVACYANDPOLICYLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1060, 150));
-
-        PRIVACYANDPOLICYBACKGROUND.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PRIVACYANDPOLICYBACKGROUND.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEWALL.jpg"))); // NOI18N
-        PRIVACYANDPOLICYBACKGROUND.setText("jLabel32");
-        PRIVACYANDPOLICYHEADER.add(PRIVACYANDPOLICYBACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 160));
-
-        PRIVACYANDPOLICY.add(PRIVACYANDPOLICYHEADER, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1070, 160));
-
-        SETTINGSTAB.addTab("tab4", PRIVACYANDPOLICY);
-
-        FEEDBACK.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        BACKBUTTON3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BACKBUTTON3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
-        BACKBUTTON3.setText("BACK");
-        BACKBUTTON3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BACKBUTTON3MouseClicked(evt);
-            }
-        });
-        FEEDBACK.add(BACKBUTTON3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 20, 130, 50));
-
-        FEEDBACKPANEL.setBackground(new java.awt.Color(255, 255, 255));
-        FEEDBACKPANEL.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        FEEDBACKPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        FEEDBACKHEADER.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        FEEDBACKHEADER.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FEEDBACKHEADER.setText("FEEDBACK");
-        FEEDBACKPANEL.add(FEEDBACKHEADER, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 0, 480, 80));
-
-        FEEDBACKSUBHEADER2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        FEEDBACKSUBHEADER2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FEEDBACKSUBHEADER2.setText("system, so we'd love to hear your feedback.");
-        FEEDBACKPANEL.add(FEEDBACKSUBHEADER2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 350, -1));
-
-        FEEDBACKSUBHEADER1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        FEEDBACKSUBHEADER1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FEEDBACKSUBHEADER1.setText("We would love to know your thought of your experience at voting");
-        FEEDBACKPANEL.add(FEEDBACKSUBHEADER1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 350, -1));
-
-        NAMETEXTFIELD1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        NAMETEXTFIELD1.setForeground(new java.awt.Color(204, 204, 204));
-        NAMETEXTFIELD1.setText("NAME");
-        NAMETEXTFIELD1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                NAMETEXTFIELD1FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                NAMETEXTFIELD1FocusLost(evt);
-            }
-        });
-        NAMETEXTFIELD1.addComponentListener(new java.awt.event.ComponentAdapter() {
-            public void componentShown(java.awt.event.ComponentEvent evt) {
-                NAMETEXTFIELD1ComponentShown(evt);
-            }
-        });
-        FEEDBACKPANEL.add(NAMETEXTFIELD1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 400, 30));
-
-        EMAILTEXTFIELD.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        EMAILTEXTFIELD.setForeground(new java.awt.Color(204, 204, 204));
-        EMAILTEXTFIELD.setText("EMAIL");
-        EMAILTEXTFIELD.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                EMAILTEXTFIELDFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                EMAILTEXTFIELDFocusLost(evt);
-            }
-        });
-        FEEDBACKPANEL.add(EMAILTEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 400, 30));
-
-        MESSAGETEXTFIELD.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        MESSAGETEXTFIELD.setForeground(new java.awt.Color(204, 204, 204));
-        MESSAGETEXTFIELD.setText("WRITE A MESSAGE...");
-        MESSAGETEXTFIELD.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                MESSAGETEXTFIELDFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                MESSAGETEXTFIELDFocusLost(evt);
-            }
-        });
-        MESSAGETEXTFIELD.addComponentListener(new java.awt.event.ComponentAdapter() {
-            public void componentShown(java.awt.event.ComponentEvent evt) {
-                MESSAGETEXTFIELDComponentShown(evt);
-            }
-        });
-        MESSAGETEXTFIELD.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setText("MESSAGE");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MESSAGETEXTFIELDActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
-        FEEDBACKPANEL.add(MESSAGETEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 400, 100));
+        jPanel9.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 400, 100));
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("WRITE A MESSAGE...");
-        MESSAGE.setViewportView(jTextArea2);
+        jTextField2.setText("NAME");
+        jPanel9.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 400, 30));
 
-        FEEDBACKPANEL.add(MESSAGE, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 400, 100));
-
-        SENDFEEDBACKBUTTON.setBackground(new java.awt.Color(0, 255, 51));
-        SENDFEEDBACKBUTTON.setText("SEND FEEDBACK");
-        SENDFEEDBACKBUTTON.addActionListener(new java.awt.event.ActionListener() {
+        jTextField3.setText("EMAIL");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SENDFEEDBACKBUTTONActionPerformed(evt);
+                jTextField3ActionPerformed(evt);
             }
         });
-        FEEDBACKPANEL.add(SENDFEEDBACKBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 170, 50));
+        jPanel9.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 400, 30));
 
-        FEEDBACKHORIZONTALSEPARATOR.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setBackground(new java.awt.Color(0, 255, 51));
+        jButton1.setText("SEND FEEDBACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 170, 50));
 
-        javax.swing.GroupLayout FEEDBACKHORIZONTALSEPARATORLayout = new javax.swing.GroupLayout(FEEDBACKHORIZONTALSEPARATOR);
-        FEEDBACKHORIZONTALSEPARATOR.setLayout(FEEDBACKHORIZONTALSEPARATORLayout);
-        FEEDBACKHORIZONTALSEPARATORLayout.setHorizontalGroup(
-            FEEDBACKHORIZONTALSEPARATORLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel17.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 420, Short.MAX_VALUE)
         );
-        FEEDBACKHORIZONTALSEPARATORLayout.setVerticalGroup(
-            FEEDBACKHORIZONTALSEPARATORLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 2, Short.MAX_VALUE)
         );
 
-        FEEDBACKPANEL.add(FEEDBACKHORIZONTALSEPARATOR, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 420, 2));
+        jPanel9.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 420, 2));
 
-        FEEDBACK.add(FEEDBACKPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 480, 510));
+        FEEDBACKi7.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 480, 510));
 
-        FEEDBACKPANELBACKGROUND.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEBG (3).jpg"))); // NOI18N
-        FEEDBACK.add(FEEDBACKPANELBACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 670));
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEBG (3).jpg"))); // NOI18N
+        FEEDBACKi7.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 670));
 
-        SETTINGSTAB.addTab("tab5", FEEDBACK);
+        jTabbedPane1.addTab("tab8", FEEDBACKi7);
 
-        CHANGESECURITY.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel28.setText("tab 9");
 
-        CHANGEPASSWORDPANEL2.setBackground(new java.awt.Color(0, 0, 102));
-        CHANGEPASSWORDPANEL2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        CHANGEPASSWORDPANEL2.addMouseListener(new java.awt.event.MouseAdapter() {
+        javax.swing.GroupLayout VOTINGINSTRUCTIONSi8Layout = new javax.swing.GroupLayout(VOTINGINSTRUCTIONSi8);
+        VOTINGINSTRUCTIONSi8.setLayout(VOTINGINSTRUCTIONSi8Layout);
+        VOTINGINSTRUCTIONSi8Layout.setHorizontalGroup(
+            VOTINGINSTRUCTIONSi8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VOTINGINSTRUCTIONSi8Layout.createSequentialGroup()
+                .addContainerGap(551, Short.MAX_VALUE)
+                .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(455, 455, 455))
+        );
+        VOTINGINSTRUCTIONSi8Layout.setVerticalGroup(
+            VOTINGINSTRUCTIONSi8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, VOTINGINSTRUCTIONSi8Layout.createSequentialGroup()
+                .addContainerGap(339, Short.MAX_VALUE)
+                .addComponent(jLabel28)
+                .addGap(305, 305, 305))
+        );
+
+        jTabbedPane1.addTab("tab9", VOTINGINSTRUCTIONSi8);
+
+        CHANGESECUPAGEi9.setBackground(new java.awt.Color(153, 153, 153));
+        CHANGESECUPAGEi9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CHANGEPASSWORDPANEL2MouseClicked(evt);
+                CHANGESECUPAGEi9MouseClicked(evt);
             }
         });
-        CHANGEPASSWORDPANEL2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        CHANGESECUPAGEi9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CHANGEPASSWORDLABEL2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        CHANGEPASSWORDLABEL2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CHANGEPASSWORDLABEL2.setText("CHANGE PASSWORD");
-        CHANGEPASSWORDPANEL2.add(CHANGEPASSWORDLABEL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 78));
+        jPanel12.setBackground(new java.awt.Color(0, 0, 102));
+        jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel12MouseClicked(evt);
+            }
+        });
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        CHANGESECURITY.add(CHANGEPASSWORDPANEL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 450, 80));
+        jLabel35.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("CHANGE PASSWORD");
+        jPanel12.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 78));
 
-        CHANGESECURITYQUESTIONPANEL2.setBackground(new java.awt.Color(51, 51, 255));
-        CHANGESECURITYQUESTIONPANEL2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        CHANGESECUPAGEi9.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 450, 80));
 
-        CHANGESECURITYQUESTIONLABEL2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        CHANGESECURITYQUESTIONLABEL2.setForeground(new java.awt.Color(255, 255, 255));
-        CHANGESECURITYQUESTIONLABEL2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CHANGESECURITYQUESTIONLABEL2.setText("CHANGE SECURITY QUESTION");
+        jPanel13.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout CHANGESECURITYQUESTIONPANEL2Layout = new javax.swing.GroupLayout(CHANGESECURITYQUESTIONPANEL2);
-        CHANGESECURITYQUESTIONPANEL2.setLayout(CHANGESECURITYQUESTIONPANEL2Layout);
-        CHANGESECURITYQUESTIONPANEL2Layout.setHorizontalGroup(
-            CHANGESECURITYQUESTIONPANEL2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CHANGESECURITYQUESTIONPANEL2Layout.createSequentialGroup()
+        jLabel36.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("CHANGE SECURITY QUESTION");
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(CHANGESECURITYQUESTIONLABEL2, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)
+                .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)
                 .addGap(31, 31, 31))
         );
-        CHANGESECURITYQUESTIONPANEL2Layout.setVerticalGroup(
-            CHANGESECURITYQUESTIONPANEL2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CHANGESECURITYQUESTIONPANEL2Layout.createSequentialGroup()
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(CHANGESECURITYQUESTIONLABEL2, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        CHANGESECURITY.add(CHANGESECURITYQUESTIONPANEL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 450, 80));
+        CHANGESECUPAGEi9.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 450, 80));
 
-        CHANGESECURITYPANEL.setBackground(new java.awt.Color(255, 255, 255));
-        CHANGESECURITYPANEL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        NEWSECURITYQUESTIONLABEL.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        NEWSECURITYQUESTIONLABEL.setText("NEW SECURITY QUESTION");
+        jLabel37.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel37.setText("NEW SECURITY QUESTION");
 
-        NEWSECURITYQUESTIONCOMBOBOX.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is your mother's maiden name?", "What high school did you attend?", "What is your favorite movie?", "What is the middle name of your youngest child?", "What was your favorite sport in high school?", "Where were you when you had your first kiss?", "What was the house number and street name you lived in as a child?", "What are the last five digits of your driver's license number?" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is your mother's maiden name?", "What high school did you attend?", "What is your favorite movie?", "What is the middle name of your youngest child?", "What was your favorite sport in high school?", "Where were you when you had your first kiss?", "What was the house number and street name you lived in as a child?", "What are the last five digits of your driver's license number?" }));
 
-        CHANGESECURITYQUESTIONCONFIRMBUTTON.setBackground(new java.awt.Color(25, 18, 211));
-        CHANGESECURITYQUESTIONCONFIRMBUTTON.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        CHANGESECURITYQUESTIONCONFIRMBUTTON.setForeground(new java.awt.Color(255, 255, 255));
-        CHANGESECURITYQUESTIONCONFIRMBUTTON.setText("CONFIRM");
+        jLabel42.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel42.setText("NEW ANSWER");
 
-        NEWANSWERTEXTFIELD.setText("Write your answer here...");
-        NEWANSWERTEXTFIELD.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                NEWANSWERTEXTFIELDFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                NEWANSWERTEXTFIELDFocusLost(evt);
-            }
-        });
+        jButton3.setBackground(new java.awt.Color(25, 18, 211));
+        jButton3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("CONFIRM");
 
-        javax.swing.GroupLayout CHANGESECURITYPANELLayout = new javax.swing.GroupLayout(CHANGESECURITYPANEL);
-        CHANGESECURITYPANEL.setLayout(CHANGESECURITYPANELLayout);
-        CHANGESECURITYPANELLayout.setHorizontalGroup(
-            CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHANGESECURITYPANELLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(94, 94, 94))
-            .addGroup(CHANGESECURITYPANELLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
                 .addGap(98, 98, 98)
-                .addGroup(CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(NEWSECURITYQUESTIONLABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NEWSECURITYQUESTIONCOMBOBOX, 0, 465, Short.MAX_VALUE)
-                    .addComponent(NEWANSWERTEXTFIELD))
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(335, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
         );
-        CHANGESECURITYPANELLayout.setVerticalGroup(
-            CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CHANGESECURITYPANELLayout.createSequentialGroup()
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
                 .addGap(87, 87, 87)
-                .addComponent(NEWSECURITYQUESTIONLABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NEWSECURITYQUESTIONCOMBOBOX, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(NEWANSWERTEXTFIELD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
-                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(73, 73, 73))
         );
 
-        CHANGESECURITY.add(CHANGESECURITYPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 900, 490));
+        CHANGESECUPAGEi9.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 900, 490));
 
-        BACKBUTTON4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BACKBUTTON4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
-        BACKBUTTON4.setText("BACK");
-        BACKBUTTON4.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKBUTTON.png"))); // NOI18N
+        jLabel53.setText("BACK");
+        jLabel53.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BACKBUTTON4MouseClicked(evt);
+                jLabel53MouseClicked(evt);
             }
         });
-        CHANGESECURITY.add(BACKBUTTON4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 10, 120, 40));
+        CHANGESECUPAGEi9.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 0, 130, 50));
 
-        SETTINGSTAB.addTab("tab7", CHANGESECURITY);
+        jTabbedPane1.addTab("tab10", CHANGESECUPAGEi9);
 
-        INDEX3.add(SETTINGSTAB, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -40, 1050, 680));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 1060, 680));
 
-        jTabbedPane1.addTab("", INDEX3);
-
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 1050, 680));
-
-        OPTIONS.setBackground(new java.awt.Color(255, 255, 255));
-        OPTIONS.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        OPTIONS.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         PROFILE.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        OPTIONS.add(PROFILE, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, 30));
+        jPanel1.add(PROFILE, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, 30));
 
         ID.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         ID.setText("View your profile ->");
@@ -993,7 +1042,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 IDMouseClicked(evt);
             }
         });
-        OPTIONS.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, 30));
+        jPanel1.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, 30));
 
         dashboardpanel.setBackground(new java.awt.Color(255, 255, 255));
         dashboardpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1020,7 +1069,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         dashboardpanel.add(dashboard, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 49, 170, 40));
 
-        OPTIONS.add(dashboardpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 170, 90));
+        jPanel1.add(dashboardpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 170, 90));
 
         electionspanel.setBackground(new java.awt.Color(255, 255, 255));
         electionspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1046,7 +1095,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         electionspanel.add(electionspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 50));
 
-        OPTIONS.add(electionspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 170, 90));
+        jPanel1.add(electionspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 170, 90));
 
         resultspanel.setBackground(new java.awt.Color(255, 255, 255));
         resultspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1072,14 +1121,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         resultspanel.add(resultspic, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 3, 170, 50));
 
-        OPTIONS.add(resultspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 170, 90));
+        jPanel1.add(resultspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 170, 90));
 
         settingspanel.setBackground(new java.awt.Color(255, 255, 255));
-        settingspanel.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                settingspanelMouseClicked(evt);
-            }
-        });
         settingspanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         settingspic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1103,12 +1147,12 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         settingspanel.add(settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 170, 40));
 
-        OPTIONS.add(settingspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 170, 90));
+        jPanel1.add(settingspanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 170, 90));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("________________________");
-        OPTIONS.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 190, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 190, -1));
 
         LOGOUT.setBackground(new java.awt.Color(255, 0, 0));
         LOGOUT.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1127,11 +1171,11 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         LOGOUT.add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
 
-        OPTIONS.add(LOGOUT, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 150, 40));
+        jPanel1.add(LOGOUT, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 150, 40));
 
-        getContentPane().add(OPTIONS, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 700));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 700));
 
-        setSize(new java.awt.Dimension(1240, 700));
+        setSize(new java.awt.Dimension(1248, 700));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1176,13 +1220,11 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private void settingspicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingspicMouseClicked
         setPanel(3, settingspanel);
         setCursor(settingspic);
-        SETTINGSTAB.setSelectedIndex(0);
     }//GEN-LAST:event_settingspicMouseClicked
 
     private void settingsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingsMouseClicked
         setPanel(3, settingspanel);
         setCursor(settings);
-        SETTINGSTAB.setSelectedIndex(0);
     }//GEN-LAST:event_settingsMouseClicked
 
     private void IDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IDMouseClicked
@@ -1194,160 +1236,92 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_logoutMouseClicked
 
     private void SECURITYICONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SECURITYICONMouseClicked
-            SETTINGSTAB.setSelectedIndex(1);
+        jTabbedPane1.setSelectedIndex(4);
     }//GEN-LAST:event_SECURITYICONMouseClicked
 
     private void ACCOUNTINFORMATIONICONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ACCOUNTINFORMATIONICONMouseClicked
-        SETTINGSTAB.setSelectedIndex(2);
+        jTabbedPane1.setSelectedIndex(5);
     }//GEN-LAST:event_ACCOUNTINFORMATIONICONMouseClicked
 
     private void PRIVACYANDPOLICYARROWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PRIVACYANDPOLICYARROWMouseClicked
-        SETTINGSTAB.setSelectedIndex(3);   
+        jTabbedPane1.setSelectedIndex(6);
     }//GEN-LAST:event_PRIVACYANDPOLICYARROWMouseClicked
 
     private void FEEDBACKARROWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FEEDBACKARROWMouseClicked
-        SETTINGSTAB.setSelectedIndex(4);
+        jTabbedPane1.setSelectedIndex(7);
     }//GEN-LAST:event_FEEDBACKARROWMouseClicked
 
+    private void VOTINGINSTRUCTIONSARROWMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VOTINGINSTRUCTIONSARROWMouseClicked
+        jTabbedPane1.setSelectedIndex(8);
+    }//GEN-LAST:event_VOTINGINSTRUCTIONSARROWMouseClicked
+
     private void SecurityPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SecurityPanelMouseClicked
-        SETTINGSTAB.setSelectedIndex(1);
+        jTabbedPane1.setSelectedIndex(4);
     }//GEN-LAST:event_SecurityPanelMouseClicked
 
     private void AccountInformationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AccountInformationMouseClicked
-        SETTINGSTAB.setSelectedIndex(2);
+        jTabbedPane1.setSelectedIndex(5);
     }//GEN-LAST:event_AccountInformationMouseClicked
 
     private void PrivacyAndPolicyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PrivacyAndPolicyMouseClicked
-        SETTINGSTAB.setSelectedIndex(3);
+        jTabbedPane1.setSelectedIndex(6);
     }//GEN-LAST:event_PrivacyAndPolicyMouseClicked
-        
+
     private void FeedbackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FeedbackMouseClicked
-        SETTINGSTAB.setSelectedIndex(4);
+        jTabbedPane1.setSelectedIndex(7);
     }//GEN-LAST:event_FeedbackMouseClicked
 
-    private void CHANGEPASSPANEL1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGEPASSPANEL1MouseClicked
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CHANGEPASSPANEL1MouseClicked
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void CHANGESECUPANEL1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGESECUPANEL1MouseClicked
-        SETTINGSTAB.setSelectedIndex(5);
-    }//GEN-LAST:event_CHANGESECUPANEL1MouseClicked
-
-    private void BACKBUTTONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTONMouseClicked
-        SETTINGSTAB.setSelectedIndex(0);
-    }//GEN-LAST:event_BACKBUTTONMouseClicked
-
-    private void BACKBUTTON2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON2MouseClicked
-        SETTINGSTAB.setSelectedIndex(0);
-    }//GEN-LAST:event_BACKBUTTON2MouseClicked
-
-    private void BACKBUTTON3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON3MouseClicked
-        SETTINGSTAB.setSelectedIndex(0);
-    }//GEN-LAST:event_BACKBUTTON3MouseClicked
-
-    private void SENDFEEDBACKBUTTONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SENDFEEDBACKBUTTONActionPerformed
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SENDFEEDBACKBUTTONActionPerformed
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void CHANGEPASSWORDPANEL2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGEPASSWORDPANEL2MouseClicked
-        SETTINGSTAB.setSelectedIndex(1);
-    }//GEN-LAST:event_CHANGEPASSWORDPANEL2MouseClicked
-
-    private void BACKBUTTON4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON4MouseClicked
-        SETTINGSTAB.setSelectedIndex(0);
-    }//GEN-LAST:event_BACKBUTTON4MouseClicked
-
-    private void settingspanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingspanelMouseClicked
-            //
-    }//GEN-LAST:event_settingspanelMouseClicked
-
-    private void SECURITYLABELMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SECURITYLABELMouseClicked
-        SETTINGSTAB.setSelectedIndex(1);
-    }//GEN-LAST:event_SECURITYLABELMouseClicked
-
-    private void INFORMATIONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_INFORMATIONMouseClicked
-        SETTINGSTAB.setSelectedIndex(2);
-    }//GEN-LAST:event_INFORMATIONMouseClicked
-
-    private void ACCOUNTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ACCOUNTMouseClicked
-        SETTINGSTAB.setSelectedIndex(2);
-    }//GEN-LAST:event_ACCOUNTMouseClicked
-
-    private void BACKBUTTON1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON1MouseClicked
-        SETTINGSTAB.setSelectedIndex(0);
-    }//GEN-LAST:event_BACKBUTTON1MouseClicked
-
-    private void NEWANSWERTEXTFIELDFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NEWANSWERTEXTFIELDFocusGained
-        if(NEWANSWERTEXTFIELD.getText().equals("Write your answer here...")){
-            
-            NEWANSWERTEXTFIELD.setText("");
-            NEWANSWERTEXTFIELD.setForeground(new Color(0,0,0));
-        }
-    }//GEN-LAST:event_NEWANSWERTEXTFIELDFocusGained
-
-    private void NEWANSWERTEXTFIELDFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NEWANSWERTEXTFIELDFocusLost
-        if(NEWANSWERTEXTFIELD.getText().equals("Write your answer here...")){
-            
-            NEWANSWERTEXTFIELD.setText("");
-            NEWANSWERTEXTFIELD.setForeground(new Color(204,204,204));
-        }
-    }//GEN-LAST:event_NEWANSWERTEXTFIELDFocusLost
-
-    private void NAMETEXTFIELD1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NAMETEXTFIELD1FocusGained
-        if(NAMETEXTFIELD1.getText().equals("NAME")){
-            NAMETEXTFIELD1.setText("");
-            NAMETEXTFIELD1.setForeground(new Color(0,0,0));
-        }
-    }//GEN-LAST:event_NAMETEXTFIELD1FocusGained
-
-    private void NAMETEXTFIELD1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NAMETEXTFIELD1FocusLost
-         if(NAMETEXTFIELD1.getText().equals("")){
-            NAMETEXTFIELD1.setText("NAME");
-            NAMETEXTFIELD1.setForeground(new Color(204,204,204));
-        }
-    }//GEN-LAST:event_NAMETEXTFIELD1FocusLost
-
-    private void NAMETEXTFIELD1ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_NAMETEXTFIELD1ComponentShown
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NAMETEXTFIELD1ComponentShown
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void EMAILTEXTFIELDFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EMAILTEXTFIELDFocusGained
-        if(EMAILTEXTFIELD.getText().equals("EMAIL")){
-            EMAILTEXTFIELD.setText("");
-            EMAILTEXTFIELD.setForeground(new Color(0,0,0));
-        }
-    }//GEN-LAST:event_EMAILTEXTFIELDFocusGained
+    private void CHANGESECUPANELMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGESECUPANELMouseClicked
+        jTabbedPane1.setSelectedIndex(9);
+    }//GEN-LAST:event_CHANGESECUPANELMouseClicked
 
-    private void EMAILTEXTFIELDFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_EMAILTEXTFIELDFocusLost
-        if(EMAILTEXTFIELD.getText().equals("")){
-            EMAILTEXTFIELD.setText("EMAIL");
-            EMAILTEXTFIELD.setForeground(new Color(204,204,204));
-        }
-    }//GEN-LAST:event_EMAILTEXTFIELDFocusLost
+    private void CHANGEPASSPANELMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGEPASSPANELMouseClicked
+        jTabbedPane1.setSelectedIndex(4);
+    }//GEN-LAST:event_CHANGEPASSPANELMouseClicked
 
-    private void MESSAGETEXTFIELDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDActionPerformed
+    private void jPanel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel12MouseClicked
+        jTabbedPane1.setSelectedIndex(4);
+    }//GEN-LAST:event_jPanel12MouseClicked
+
+    private void VotingInstructionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VotingInstructionsMouseClicked
+        jTabbedPane1.setSelectedIndex(8);
+    }//GEN-LAST:event_VotingInstructionsMouseClicked
+
+    private void jLabel52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel52MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel52MouseClicked
+
+    private void jLabel53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel53MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel53MouseClicked
+
+    private void CHANGESECUPAGEi9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CHANGESECUPAGEi9MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_MESSAGETEXTFIELDActionPerformed
+    }//GEN-LAST:event_CHANGESECUPAGEi9MouseClicked
 
-    private void MESSAGETEXTFIELDComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDComponentShown
-        //MESSAGETEXTFIELD.setForeground(new Color(204,204,204));
-    }//GEN-LAST:event_MESSAGETEXTFIELDComponentShown
+    private void jLabel51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel51MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel51MouseClicked
 
-    private void MESSAGETEXTFIELDFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDFocusLost
-        if (MESSAGETEXTFIELD.getText().equals(""))
-        {
-            MESSAGETEXTFIELD.setText("WRITE A MESSAGE...");
-            MESSAGETEXTFIELD.setForeground(new Color(204,204,204));
-        }
-    }//GEN-LAST:event_MESSAGETEXTFIELDFocusLost
+    private void jLabel55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel55MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel55MouseClicked
 
-    private void MESSAGETEXTFIELDFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDFocusGained
-        if (MESSAGETEXTFIELD.getText().equals("WRITE A MESSAGE..."))
-        {
-            MESSAGETEXTFIELD.setText("");
-            MESSAGETEXTFIELD.setForeground(new Color(0,0,0));
-        }
-    }//GEN-LAST:event_MESSAGETEXTFIELDFocusGained
+    private void jLabel54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel54MouseClicked
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jLabel54MouseClicked
 
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -1400,90 +1374,34 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ACCOUNT;
-    private javax.swing.JPanel ACCOUNTINFORMATION;
     private javax.swing.JLabel ACCOUNTINFORMATIONICON;
-    private javax.swing.JLabel AEMTRAICON;
+    private javax.swing.JPanel ACCOUNTINFORMATIONi5;
     private javax.swing.JPanel AccountInformation;
     private javax.swing.JLabel BACKBUTTON;
-    private javax.swing.JLabel BACKBUTTON1;
-    private javax.swing.JLabel BACKBUTTON2;
-    private javax.swing.JLabel BACKBUTTON3;
-    private javax.swing.JLabel BACKBUTTON4;
-    private javax.swing.JLabel BIRTHDATELABEL;
-    private javax.swing.JButton CHANGEPASSCONFIRMBUTTON;
-    private javax.swing.JPanel CHANGEPASSPANEL1;
-    private javax.swing.JLabel CHANGEPASSWORDLABEL;
-    private javax.swing.JLabel CHANGEPASSWORDLABEL2;
-    private javax.swing.JPanel CHANGEPASSWORDPANEL;
-    private javax.swing.JPanel CHANGEPASSWORDPANEL2;
-    private javax.swing.JPanel CHANGESECUPANEL1;
-    private javax.swing.JPanel CHANGESECURITY;
-    private javax.swing.JPanel CHANGESECURITYPANEL;
-    private javax.swing.JButton CHANGESECURITYQUESTIONCONFIRMBUTTON;
-    private javax.swing.JLabel CHANGESECURITYQUESTIONLABEL;
-    private javax.swing.JLabel CHANGESECURITYQUESTIONLABEL2;
-    private javax.swing.JPanel CHANGESECURITYQUESTIONPANEL2;
-    private javax.swing.JLabel CITIZENSHIPLABEL;
-    private javax.swing.JLabel CIVILSTATUSLABEL;
-    private javax.swing.JLabel CONFIRMPASSWORDLABEL;
-    private javax.swing.JTextField CONFIRMPASSWORDTEXTFIELD;
-    private javax.swing.JPanel CONTAINER1;
-    private javax.swing.JTextPane CONTENT;
-    private javax.swing.JTextField CURRPASSWORDTEXTFIELD;
-    private javax.swing.JLabel EMAILADDRESSLABEL;
-    private javax.swing.JTextField EMAILTEXTFIELD;
-    private javax.swing.JPanel FEEDBACK;
+    private javax.swing.JPanel CHANGEPASSPANEL;
+    private javax.swing.JPanel CHANGESECUPAGEi9;
+    private javax.swing.JPanel CHANGESECUPANEL;
     private javax.swing.JLabel FEEDBACKARROW;
-    private javax.swing.JLabel FEEDBACKHEADER;
-    private javax.swing.JPanel FEEDBACKHORIZONTALSEPARATOR;
-    private javax.swing.JLabel FEEDBACKICON;
-    private javax.swing.JLabel FEEDBACKLABEL;
-    private javax.swing.JPanel FEEDBACKPANEL;
-    private javax.swing.JLabel FEEDBACKPANELBACKGROUND;
-    private javax.swing.JLabel FEEDBACKSUBHEADER1;
-    private javax.swing.JLabel FEEDBACKSUBHEADER2;
-    private javax.swing.JLabel FULLNAMELABEL;
+    private javax.swing.JPanel FEEDBACKi7;
     private javax.swing.JPanel Feedback;
-    private javax.swing.JLabel GENDERLABEL;
-    private javax.swing.JLabel HORIZONTALSEPARATOR;
     private javax.swing.JLabel ID;
     private javax.swing.JPanel INDEX0;
     private javax.swing.JPanel INDEX1;
     private javax.swing.JPanel INDEX2;
     private javax.swing.JPanel INDEX3;
-    private javax.swing.JLabel INFORMATION;
-    private javax.swing.JLabel LABEL1;
     private javax.swing.JPanel LOGOUT;
-    private javax.swing.JPanel MAIN;
-    private javax.swing.JScrollPane MESSAGE;
-    private javax.swing.JTextField MESSAGETEXTFIELD;
-    private javax.swing.JTextField NAMETEXTFIELD1;
-    private javax.swing.JTextField NEWANSWERTEXTFIELD;
-    private javax.swing.JLabel NEWPASSWORDLABEL;
-    private javax.swing.JTextField NEWPASSWORDTEXTFIELD;
-    private javax.swing.JComboBox<String> NEWSECURITYQUESTIONCOMBOBOX;
-    private javax.swing.JLabel NEWSECURITYQUESTIONLABEL;
-    private javax.swing.JPanel OPTIONS;
-    private javax.swing.JPanel PERSONALINFORMATIONCONTAINER;
-    private javax.swing.JLabel PERSONALINFORMATIONLABEL;
-    private javax.swing.JPanel PRIVACYANDPOLICY;
     private javax.swing.JLabel PRIVACYANDPOLICYARROW;
-    private javax.swing.JLabel PRIVACYANDPOLICYBACKGROUND;
-    private javax.swing.JScrollPane PRIVACYANDPOLICYCONTENTPANE;
-    private javax.swing.JPanel PRIVACYANDPOLICYHEADER;
-    private javax.swing.JLabel PRIVACYANDPOLICYLABEL;
-    private javax.swing.JLabel PRIVACYNPOLICYICON;
-    private javax.swing.JLabel PRIVACYNPOLICYLABEL;
+    private javax.swing.JPanel PRIVACYANDPOLICYi6;
     private javax.swing.JLabel PROFILE;
     private javax.swing.JPanel PrivacyAndPolicy;
-    private javax.swing.JPanel SECURITY;
     private javax.swing.JLabel SECURITYICON;
     private javax.swing.JLabel SECURITYLABEL;
-    private javax.swing.JButton SENDFEEDBACKBUTTON;
-    private javax.swing.JPanel SEPARATORLINE1;
-    private javax.swing.JTabbedPane SETTINGSTAB;
+    private javax.swing.JPanel SECURITYi4;
+    private javax.swing.JPanel SEPARATORLINE;
     private javax.swing.JPanel SecurityPanel;
+    private javax.swing.JLabel VOTINGINSTRUCTIONSARROW;
+    private javax.swing.JPanel VOTINGINSTRUCTIONSi8;
+    private javax.swing.JPanel VotingInstructions;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JLabel dashboard;
@@ -1493,6 +1411,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel elections;
     private javax.swing.JPanel electionspanel;
     private javax.swing.JLabel electionspic;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1501,25 +1423,82 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel logout;
     private javax.swing.JLabel results;
     private javax.swing.JPanel resultspanel;
