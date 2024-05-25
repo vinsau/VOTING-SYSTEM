@@ -41,6 +41,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
         this.dateTime = dateTime;
         startDateTimeUpdater();
         showBarChart();
+        
+        
     }
     
       
@@ -186,9 +188,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
         FEEDBACKSUBHEADER1 = new javax.swing.JLabel();
         NAMETEXTFIELD1 = new javax.swing.JTextField();
         EMAILTEXTFIELD = new javax.swing.JTextField();
-        MESSAGETEXTFIELD = new javax.swing.JTextField();
         MESSAGE = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        MESSAGEPANEL = new javax.swing.JTextArea();
         SENDFEEDBACKBUTTON = new javax.swing.JButton();
         FEEDBACKHORIZONTALSEPARATOR = new javax.swing.JPanel();
         FEEDBACKPANELBACKGROUND = new javax.swing.JLabel();
@@ -800,35 +801,26 @@ public class VoterMainPanel extends javax.swing.JFrame {
         });
         FEEDBACKPANEL.add(EMAILTEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 400, 30));
 
-        MESSAGETEXTFIELD.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        MESSAGETEXTFIELD.setForeground(new java.awt.Color(204, 204, 204));
-        MESSAGETEXTFIELD.setText("WRITE A MESSAGE...");
-        MESSAGETEXTFIELD.addFocusListener(new java.awt.event.FocusAdapter() {
+        MESSAGE.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        MESSAGE.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        MESSAGE.setHorizontalScrollBar(null);
+
+        MESSAGEPANEL.setColumns(20);
+        MESSAGEPANEL.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        MESSAGEPANEL.setForeground(new java.awt.Color(204, 204, 204));
+        MESSAGEPANEL.setRows(5);
+        MESSAGEPANEL.setText("WRITE A MESSAGE...");
+        MESSAGEPANEL.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                MESSAGETEXTFIELDFocusGained(evt);
+                MESSAGEPANELFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                MESSAGETEXTFIELDFocusLost(evt);
+                MESSAGEPANELFocusLost(evt);
             }
         });
-        MESSAGETEXTFIELD.addComponentListener(new java.awt.event.ComponentAdapter() {
-            public void componentShown(java.awt.event.ComponentEvent evt) {
-                MESSAGETEXTFIELDComponentShown(evt);
-            }
-        });
-        MESSAGETEXTFIELD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MESSAGETEXTFIELDActionPerformed(evt);
-            }
-        });
-        FEEDBACKPANEL.add(MESSAGETEXTFIELD, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 400, 100));
+        MESSAGE.setViewportView(MESSAGEPANEL);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("WRITE A MESSAGE...");
-        MESSAGE.setViewportView(jTextArea2);
-
-        FEEDBACKPANEL.add(MESSAGE, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 400, 100));
+        FEEDBACKPANEL.add(MESSAGE, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 400, 120));
 
         SENDFEEDBACKBUTTON.setBackground(new java.awt.Color(0, 255, 51));
         SENDFEEDBACKBUTTON.setText("SEND FEEDBACK");
@@ -837,7 +829,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 SENDFEEDBACKBUTTONActionPerformed(evt);
             }
         });
-        FEEDBACKPANEL.add(SENDFEEDBACKBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 170, 50));
+        FEEDBACKPANEL.add(SENDFEEDBACKBUTTON, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 170, 50));
 
         FEEDBACKHORIZONTALSEPARATOR.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -1325,29 +1317,21 @@ public class VoterMainPanel extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_EMAILTEXTFIELDFocusLost
 
-    private void MESSAGETEXTFIELDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MESSAGETEXTFIELDActionPerformed
-
-    private void MESSAGETEXTFIELDComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDComponentShown
-        //MESSAGETEXTFIELD.setForeground(new Color(204,204,204));
-    }//GEN-LAST:event_MESSAGETEXTFIELDComponentShown
-
-    private void MESSAGETEXTFIELDFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDFocusLost
-        if (MESSAGETEXTFIELD.getText().equals(""))
+    private void MESSAGEPANELFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGEPANELFocusGained
+        if (MESSAGEPANEL.getText().equals("WRITE A MESSAGE..."))
         {
-            MESSAGETEXTFIELD.setText("WRITE A MESSAGE...");
-            MESSAGETEXTFIELD.setForeground(new Color(204,204,204));
+            MESSAGEPANEL.setText("");
+            MESSAGEPANEL.setForeground(new Color(0,0,0));
         }
-    }//GEN-LAST:event_MESSAGETEXTFIELDFocusLost
+    }//GEN-LAST:event_MESSAGEPANELFocusGained
 
-    private void MESSAGETEXTFIELDFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGETEXTFIELDFocusGained
-        if (MESSAGETEXTFIELD.getText().equals("WRITE A MESSAGE..."))
+    private void MESSAGEPANELFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_MESSAGEPANELFocusLost
+        if (MESSAGEPANEL.getText().equals(""))
         {
-            MESSAGETEXTFIELD.setText("");
-            MESSAGETEXTFIELD.setForeground(new Color(0,0,0));
+            MESSAGEPANEL.setText("WRITE A MESSAGE...");
+            MESSAGEPANEL.setForeground(new Color(204,204,204));
         }
-    }//GEN-LAST:event_MESSAGETEXTFIELDFocusGained
+    }//GEN-LAST:event_MESSAGEPANELFocusLost
 
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -1457,7 +1441,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JPanel LOGOUT;
     private javax.swing.JPanel MAIN;
     private javax.swing.JScrollPane MESSAGE;
-    private javax.swing.JTextField MESSAGETEXTFIELD;
+    private javax.swing.JTextArea MESSAGEPANEL;
     private javax.swing.JTextField NAMETEXTFIELD1;
     private javax.swing.JTextField NEWANSWERTEXTFIELD;
     private javax.swing.JLabel NEWPASSWORDLABEL;
@@ -1519,7 +1503,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel logout;
     private javax.swing.JLabel results;
     private javax.swing.JPanel resultspanel;
