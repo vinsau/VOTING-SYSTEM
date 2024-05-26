@@ -41,8 +41,9 @@ public class VoterMainPanel extends javax.swing.JFrame {
         this.dateTime = dateTime;
         startDateTimeUpdater();
         showBarChart();
-        
-        
+        BackResultsButton.setEnabled(false);
+        BackResultsButton.setVisible(false);
+       
     }
     
       
@@ -158,7 +159,32 @@ public class VoterMainPanel extends javax.swing.JFrame {
         SKKagawadTab = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         INDEX2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
+        ResultsLabelPanel = new javax.swing.JPanel();
+        BackResultsButton = new javax.swing.JButton();
+        ResultsLabel = new javax.swing.JLabel();
+        ResultsTab = new javax.swing.JTabbedPane();
+        ResultsPanel = new javax.swing.JPanel();
+        LocalResultsPanel = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        SEPARATOR2 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        StateResultsPanel = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        SEPARATOR3 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        NationalResultsPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        SEPARATOR1 = new javax.swing.JLabel();
+        SKResultsButton = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        SKResultsPanel = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        SEPARATOR4 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
         INDEX3 = new javax.swing.JPanel();
         SETTINGSTAB = new javax.swing.JTabbedPane();
         MAIN = new javax.swing.JPanel();
@@ -690,8 +716,244 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         INDEX2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel8.setText("FORM 3");
-        INDEX2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 298, -1, -1));
+        ResultsLabelPanel.setBackground(new java.awt.Color(0, 0, 0));
+        ResultsLabelPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        BackResultsButton.setBackground(new java.awt.Color(255, 255, 255));
+        BackResultsButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        BackResultsButton.setForeground(new java.awt.Color(0, 0, 0));
+        BackResultsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKSMALL.png"))); // NOI18N
+        BackResultsButton.setText("Back");
+        BackResultsButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        BackResultsButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackResultsButtonMouseClicked(evt);
+            }
+        });
+        ResultsLabelPanel.add(BackResultsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 110, 40));
+
+        ResultsLabel.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
+        ResultsLabel.setForeground(new java.awt.Color(255, 255, 255));
+        ResultsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ResultsLabel.setText("RESULTS");
+        ResultsLabelPanel.add(ResultsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 60));
+
+        INDEX2.add(ResultsLabelPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 60));
+
+        ResultsPanel.setLayout(new java.awt.GridLayout());
+
+        LocalResultsPanel.setBackground(new java.awt.Color(51, 102, 255));
+        LocalResultsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("LOCAL");
+        LocalResultsPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 350, 60));
+
+        SEPARATOR2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        SEPARATOR2.setForeground(new java.awt.Color(255, 255, 255));
+        SEPARATOR2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SEPARATOR2.setText("_______________");
+        LocalResultsPanel.add(SEPARATOR2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 350, -1));
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Mayor", ""},
+                {"Vice Mayor", null},
+                {"Congressman", null},
+                {"City Councilor", null},
+                {"Barangay Captain", null},
+                {"Barangay Councilor", null},
+                {"", null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Position", "Candidate"
+            }
+        ));
+        jTable2.setRowHeight(40);
+        jScrollPane3.setViewportView(jTable2);
+
+        LocalResultsPanel.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 330, 380));
+
+        ResultsPanel.add(LocalResultsPanel);
+
+        StateResultsPanel.setBackground(new java.awt.Color(255, 0, 0));
+        StateResultsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("STATE");
+        StateResultsPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 350, 60));
+
+        SEPARATOR3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        SEPARATOR3.setForeground(new java.awt.Color(255, 255, 255));
+        SEPARATOR3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SEPARATOR3.setText("_______________");
+        StateResultsPanel.add(SEPARATOR3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 350, 50));
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Governor", null},
+                {"Vice Governor", null},
+                {"Board Member", null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Position", "Candidate"
+            }
+        ));
+        jTable3.setRowHeight(40);
+        jScrollPane4.setViewportView(jTable3);
+
+        StateResultsPanel.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 330, 380));
+
+        ResultsPanel.add(StateResultsPanel);
+
+        NationalResultsPanel.setBackground(new java.awt.Color(51, 204, 0));
+        NationalResultsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("NATIONAL");
+        NationalResultsPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 350, 60));
+
+        SEPARATOR1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        SEPARATOR1.setForeground(new java.awt.Color(255, 255, 255));
+        SEPARATOR1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SEPARATOR1.setText("______________________");
+        NationalResultsPanel.add(SEPARATOR1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 350, 50));
+
+        SKResultsButton.setBackground(new java.awt.Color(255, 204, 0));
+        SKResultsButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        SKResultsButton.setForeground(new java.awt.Color(0, 0, 0));
+        SKResultsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/FORWARDSMALL.png"))); // NOI18N
+        SKResultsButton.setText("SK Results");
+        SKResultsButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        SKResultsButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SKResultsButtonMouseClicked(evt);
+            }
+        });
+        NationalResultsPanel.add(SKResultsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 610, 170, 50));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"President", null},
+                {"Vice President", null},
+                {"Senator", null},
+                {"House of Representative", null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Position", "Candidate"
+            }
+        ));
+        jTable5.setRowHeight(40);
+        jScrollPane6.setViewportView(jTable5);
+
+        NationalResultsPanel.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 330, 380));
+
+        ResultsPanel.add(NationalResultsPanel);
+
+        ResultsTab.addTab("", ResultsPanel);
+
+        SKResultsPanel.setBackground(new java.awt.Color(255, 204, 0));
+        SKResultsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("SANGGUNIANG KABATAAN");
+        SKResultsPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 1050, 60));
+
+        SEPARATOR4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        SEPARATOR4.setForeground(new java.awt.Color(0, 0, 0));
+        SEPARATOR4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SEPARATOR4.setText("_________________________________________________________");
+        SKResultsPanel.add(SEPARATOR4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 1050, 50));
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"SK Chairman", null},
+                {"SK Councilor ", null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Position", "Candidates"
+            }
+        ));
+        jTable4.setRowHeight(50);
+        jScrollPane5.setViewportView(jTable4);
+
+        SKResultsPanel.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 590, -1));
+
+        ResultsTab.addTab("", SKResultsPanel);
+
+        INDEX2.add(ResultsTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -60, 1050, 710));
 
         OPTIONSTAB.addTab("", INDEX2);
 
@@ -1288,7 +1550,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 .addComponent(NEWSECURITYQUESTIONCOMBOBOX, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(NEWANSWERTEXTFIELD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
                 .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(73, 73, 73))
         );
@@ -1683,6 +1945,18 @@ public class VoterMainPanel extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_NEWANSWERTEXTFIELDActionPerformed
 
+    private void SKResultsButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SKResultsButtonMouseClicked
+        ResultsTab.setSelectedIndex(1);
+        BackResultsButton.setEnabled(true);
+        BackResultsButton.setVisible(true);
+    }//GEN-LAST:event_SKResultsButtonMouseClicked
+
+    private void BackResultsButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackResultsButtonMouseClicked
+        ResultsTab.setSelectedIndex(0);
+        BackResultsButton.setEnabled(false);
+        BackResultsButton.setVisible(false);
+    }//GEN-LAST:event_BackResultsButtonMouseClicked
+
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
@@ -1748,6 +2022,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel BIRTHDATELABEL;
     private javax.swing.JButton BackButton;
     private javax.swing.JPanel BackPanel;
+    private javax.swing.JButton BackResultsButton;
     private javax.swing.JButton BarangayCaptainButton;
     private javax.swing.JPanel BarangayCaptainTab;
     private javax.swing.JPanel BarangayCouncilorTab;
@@ -1809,6 +2084,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel LABEL1;
     private javax.swing.JLabel LOGO;
     private javax.swing.JPanel LOGOUT;
+    private javax.swing.JPanel LocalResultsPanel;
     private javax.swing.JPanel MAIN;
     private javax.swing.JScrollPane MESSAGE;
     private javax.swing.JTextArea MESSAGEPANEL;
@@ -1822,6 +2098,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> NEWSECURITYQUESTIONCOMBOBOX;
     private javax.swing.JLabel NEWSECURITYQUESTIONLABEL;
     private javax.swing.JLabel NONVOTED;
+    private javax.swing.JPanel NationalResultsPanel;
     private javax.swing.JPanel OPTIONS;
     private javax.swing.JTabbedPane OPTIONSTAB;
     private javax.swing.JPanel PERSONALINFORMATIONCONTAINER;
@@ -1837,11 +2114,19 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel PROFILE;
     private javax.swing.JPanel PrivacyAndPolicy;
     private javax.swing.JLabel REGISTEREDVOTERS;
+    private javax.swing.JLabel ResultsLabel;
+    private javax.swing.JPanel ResultsLabelPanel;
+    private javax.swing.JPanel ResultsPanel;
+    private javax.swing.JTabbedPane ResultsTab;
     private javax.swing.JPanel SECURITY;
     private javax.swing.JLabel SECURITYICON;
     private javax.swing.JLabel SECURITYLABEL;
     private javax.swing.JButton SENDFEEDBACKBUTTON;
     private javax.swing.JLabel SEPARATOR;
+    private javax.swing.JLabel SEPARATOR1;
+    private javax.swing.JLabel SEPARATOR2;
+    private javax.swing.JLabel SEPARATOR3;
+    private javax.swing.JLabel SEPARATOR4;
     private javax.swing.JPanel SEPARATORLINE1;
     private javax.swing.JTabbedPane SETTINGSTAB;
     private javax.swing.JButton SKButton;
@@ -1849,9 +2134,12 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JPanel SKChairpersonTab;
     private javax.swing.JButton SKKagawadButton;
     private javax.swing.JPanel SKKagawadTab;
+    private javax.swing.JButton SKResultsButton;
+    private javax.swing.JPanel SKResultsPanel;
     private javax.swing.JPanel SKTab;
     private javax.swing.JLabel STATISTICSLABEL;
     private javax.swing.JPanel SecurityPanel;
+    private javax.swing.JPanel StateResultsPanel;
     private javax.swing.JPanel TOOLBAR;
     private javax.swing.JLabel USERIMAGE;
     private javax.swing.JLabel USERIMAGE1;
@@ -1869,6 +2157,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel elections;
     private javax.swing.JPanel electionspanel;
     private javax.swing.JLabel electionspic;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1878,12 +2167,22 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel logout;
     private javax.swing.JLabel results;
