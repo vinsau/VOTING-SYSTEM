@@ -102,6 +102,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         TOOLBAR = new javax.swing.JPanel();
         EXIT = new javax.swing.JLabel();
         MINIMIZE = new javax.swing.JLabel();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
         OPTIONSTAB = new javax.swing.JTabbedPane();
         INDEX0 = new javax.swing.JPanel();
         DATETIME = new javax.swing.JPanel();
@@ -287,6 +288,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
             }
         });
         TOOLBAR.add(MINIMIZE, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 10, -1, -1));
+        TOOLBAR.add(jTabbedPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 700));
 
         getContentPane().add(TOOLBAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 1060, 50));
 
@@ -695,11 +697,16 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         INDEX3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        SETTINGSTAB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        MAIN.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         MAIN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        CONTAINER1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         CONTAINER1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         SecurityPanel.setBackground(new java.awt.Color(255, 255, 255));
+        SecurityPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         SecurityPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SecurityPanelMouseClicked(evt);
@@ -729,6 +736,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         CONTAINER1.add(SecurityPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 260, 210));
 
         AccountInformation.setBackground(new java.awt.Color(255, 255, 255));
+        AccountInformation.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         AccountInformation.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AccountInformationMouseClicked(evt);
@@ -770,6 +778,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         MAIN.add(CONTAINER1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 290));
 
         PrivacyAndPolicy.setBackground(new java.awt.Color(255, 255, 255));
+        PrivacyAndPolicy.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         PrivacyAndPolicy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PrivacyAndPolicyMouseClicked(evt);
@@ -796,6 +805,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         MAIN.add(PrivacyAndPolicy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 800, 80));
 
         Feedback.setBackground(new java.awt.Color(255, 255, 255));
+        Feedback.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Feedback.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 FeedbackMouseClicked(evt);
@@ -846,6 +856,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         CHANGEPASSWORDPANEL.setBackground(new java.awt.Color(255, 255, 255));
         CHANGEPASSWORDPANEL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        CHANGEPASSWORDPANEL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         CHANGEPASSWORDPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LABEL1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -1076,6 +1087,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         FEEDBACKPANEL.setBackground(new java.awt.Color(255, 255, 255));
         FEEDBACKPANEL.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        FEEDBACKPANEL.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         FEEDBACKPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         FEEDBACKHEADER.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
@@ -1145,7 +1157,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         FEEDBACKPANEL.add(MESSAGE, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 400, 120));
 
-        SENDFEEDBACKBUTTON.setBackground(new java.awt.Color(0, 255, 51));
+        SENDFEEDBACKBUTTON.setBackground(new java.awt.Color(153, 204, 255));
+        SENDFEEDBACKBUTTON.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         SENDFEEDBACKBUTTON.setText("SEND FEEDBACK");
         SENDFEEDBACKBUTTON.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1172,6 +1185,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         FEEDBACK.add(FEEDBACKPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 480, 510));
 
         FEEDBACKPANELBACKGROUND.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEBG (3).jpg"))); // NOI18N
+        FEEDBACKPANELBACKGROUND.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         FEEDBACK.add(FEEDBACKPANELBACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 670));
 
         SETTINGSTAB.addTab("tab5", FEEDBACK);
@@ -1230,7 +1244,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         NEWSECURITYQUESTIONCOMBOBOX.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is your mother's maiden name?", "What high school did you attend?", "What is your favorite movie?", "What is the middle name of your youngest child?", "What was your favorite sport in high school?", "Where were you when you had your first kiss?", "What was the house number and street name you lived in as a child?", "What are the last five digits of your driver's license number?" }));
 
         CHANGESECURITYQUESTIONCONFIRMBUTTON.setBackground(new java.awt.Color(25, 18, 211));
-        CHANGESECURITYQUESTIONCONFIRMBUTTON.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        CHANGESECURITYQUESTIONCONFIRMBUTTON.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         CHANGESECURITYQUESTIONCONFIRMBUTTON.setForeground(new java.awt.Color(255, 255, 255));
         CHANGESECURITYQUESTIONCONFIRMBUTTON.setText("CONFIRM");
 
@@ -1243,15 +1257,16 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 NEWANSWERTEXTFIELDFocusLost(evt);
             }
         });
+        NEWANSWERTEXTFIELD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NEWANSWERTEXTFIELDActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout CHANGESECURITYPANELLayout = new javax.swing.GroupLayout(CHANGESECURITYPANEL);
         CHANGESECURITYPANEL.setLayout(CHANGESECURITYPANELLayout);
         CHANGESECURITYPANELLayout.setHorizontalGroup(
             CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHANGESECURITYPANELLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(94, 94, 94))
             .addGroup(CHANGESECURITYPANELLayout.createSequentialGroup()
                 .addGap(98, 98, 98)
                 .addGroup(CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -1259,6 +1274,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
                     .addComponent(NEWSECURITYQUESTIONCOMBOBOX, 0, 465, Short.MAX_VALUE)
                     .addComponent(NEWANSWERTEXTFIELD))
                 .addContainerGap(335, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CHANGESECURITYPANELLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
         );
         CHANGESECURITYPANELLayout.setVerticalGroup(
             CHANGESECURITYPANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1269,8 +1288,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 .addComponent(NEWSECURITYQUESTIONCOMBOBOX, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(36, 36, 36)
                 .addComponent(NEWANSWERTEXTFIELD, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
-                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
+                .addComponent(CHANGESECURITYQUESTIONCONFIRMBUTTON, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(73, 73, 73))
         );
 
@@ -1660,6 +1679,10 @@ public class VoterMainPanel extends javax.swing.JFrame {
         
     }//GEN-LAST:event_SKButtonMouseClicked
 
+    private void NEWANSWERTEXTFIELDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEWANSWERTEXTFIELDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NEWANSWERTEXTFIELDActionPerformed
+
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
     }
@@ -1860,6 +1883,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel logout;
     private javax.swing.JLabel results;
