@@ -57,7 +57,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
                 dataset, PlotOrientation.VERTICAL, false,true,false);
         
         CategoryPlot categoryPlot = chart.getCategoryPlot();
-        //categoryPlot.setRangeGridlinePaint(Color.BLUE);
         categoryPlot.setBackgroundPaint(Color.WHITE);
         BarRenderer renderer = (BarRenderer) categoryPlot.getRenderer();
         Color clr3 = new Color(204,0,51);
@@ -67,11 +66,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
         CHART.removeAll();
         CHART.add(barpChartPanel, BorderLayout.CENTER);
         CHART.validate();
-        
-        
     }
 
-   
     private void startDateTimeUpdater() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss");
 
@@ -88,12 +84,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
         dateTime.setText(dtf.format(now));
     }
     
-
-    
-
-
-    
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

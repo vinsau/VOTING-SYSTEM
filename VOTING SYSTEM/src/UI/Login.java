@@ -11,17 +11,11 @@ public class Login extends javax.swing.JFrame {
 
     
     public Login() {
-        
-       
         initComponents();
         emailField.setBackground(new java.awt.Color(0,0,0,1));
         passwordField.setBackground(new java.awt.Color(0,0,0,1));
-        
-        
-        
     }
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
