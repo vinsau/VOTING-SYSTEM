@@ -16,6 +16,7 @@ import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.BarRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
+import javax.swing.JOptionPane;
 
 public class VoterMainPanel extends javax.swing.JFrame {
 
@@ -3250,7 +3251,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
 
         FEEDBACK.add(FEEDBACKPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 480, 510));
 
-        FEEDBACKPANELBACKGROUND.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEBG (3).jpg"))); // NOI18N
+        FEEDBACKPANELBACKGROUND.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BLUEBG.jpg"))); // NOI18N
         FEEDBACKPANELBACKGROUND.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         FEEDBACK.add(FEEDBACKPANELBACKGROUND, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 670));
 
@@ -3515,6 +3516,11 @@ public class VoterMainPanel extends javax.swing.JFrame {
         OPTIONS.add(SEPARATOR, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 190, -1));
 
         LOGOUT.setBackground(new java.awt.Color(255, 0, 0));
+        LOGOUT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LOGOUTMouseClicked(evt);
+            }
+        });
         LOGOUT.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logout.setBackground(new java.awt.Color(255, 0, 0));
@@ -3524,11 +3530,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
         logout.setText("LOGOUT");
         logout.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         logout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        logout.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                logoutMouseClicked(evt);
-            }
-        });
         LOGOUT.add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, -1));
 
         OPTIONS.add(LOGOUT, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 150, 40));
@@ -3593,10 +3594,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
        OPTIONSTAB.setSelectedIndex(3);
        SETTINGSTAB.setSelectedIndex(2);
     }//GEN-LAST:event_IDMouseClicked
-
-    private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
-
-    }//GEN-LAST:event_logoutMouseClicked
 
     private void SECURITYICONMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SECURITYICONMouseClicked
             SETTINGSTAB.setSelectedIndex(1);
@@ -3768,7 +3765,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_BackResultsButtonMouseClicked
 
     private void SKButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SKButtonMouseClicked
-        // TODO add your handling code here:
+       
         ElectorateTab.setSelectedIndex(0);
         EChoiceTab.setSelectedIndex(3);
         ElectorateClassifier.setEnabled(false);
@@ -4286,6 +4283,19 @@ public class VoterMainPanel extends javax.swing.JFrame {
     private void BackResultsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackResultsButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BackResultsButtonActionPerformed
+
+    private void LOGOUTMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LOGOUTMouseClicked
+        int response = JOptionPane.showConfirmDialog(null, "Are you sure you want to logout?", "LOGOUT", JOptionPane.YES_NO_OPTION);
+        
+        if (response == JOptionPane.YES_OPTION){
+            Login login = new Login();
+            login.setVisible(true);
+            this.dispose();
+        } else if (response == JOptionPane.NO_OPTION){
+            JOptionPane.showMessageDialog(null, "OK NIGGA");
+        }
+        
+    }//GEN-LAST:event_LOGOUTMouseClicked
 
     private void setCursor(JLabel targetLabel) {
        targetLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));

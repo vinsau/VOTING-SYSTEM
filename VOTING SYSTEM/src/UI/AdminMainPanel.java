@@ -413,7 +413,7 @@ public class AdminMainPanel extends javax.swing.JFrame {
 
         ManageResultsLabel.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         ManageResultsLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ManageResultsLabel.setText("MANAGE RESULTS");
+        ManageResultsLabel.setText("VIEW RESULTS");
         ManageResultsLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ManageResults.add(ManageResultsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 60));
 
@@ -2120,7 +2120,13 @@ public class AdminMainPanel extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EXITMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXITMouseClicked
-      System.exit(0);
+      int response = JOptionPane.showConfirmDialog(this, "You'll be redirected to Voter Login. Continue?", "Confirmation", JOptionPane.YES_NO_OPTION);
+      
+      if (response == JOptionPane.YES_OPTION){
+          Login login = new Login();
+          login.setVisible(true);
+          this.dispose();
+      } 
     }//GEN-LAST:event_EXITMouseClicked
 
     private void MINIMIZEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MINIMIZEMouseClicked
