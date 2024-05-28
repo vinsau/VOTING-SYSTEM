@@ -26,23 +26,94 @@ public class VoterVerifyCode extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        FIRSTLAYER = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        SUBLABEL1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        SUBLABEL2 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        TITLEPANEL = new javax.swing.JPanel();
+        SECURITYVERIFICATIONLABEL = new javax.swing.JLabel();
+        EXIT = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+
+        FIRSTLAYER.setBackground(new java.awt.Color(255, 255, 255));
+        FIRSTLAYER.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        FIRSTLAYER.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setText("SEND");
+        FIRSTLAYER.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 80, 30));
+
+        SUBLABEL1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        SUBLABEL1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SUBLABEL1.setText("The code will be sent to your email.");
+        FIRSTLAYER.add(SUBLABEL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 310, 30));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        FIRSTLAYER.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 320, 30));
+
+        SUBLABEL2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        SUBLABEL2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SUBLABEL2.setText("Click send to obtain the verification code.");
+        FIRSTLAYER.add(SUBLABEL2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 400, 30));
+
+        jButton2.setBackground(new java.awt.Color(25, 18, 211));
+        jButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("CONFIRM");
+        FIRSTLAYER.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 320, 160, 40));
+
+        TITLEPANEL.setBackground(new java.awt.Color(25, 18, 211));
+        TITLEPANEL.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        SECURITYVERIFICATIONLABEL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        SECURITYVERIFICATIONLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        SECURITYVERIFICATIONLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SECURITYVERIFICATIONLABEL.setText("SECURITY  VERIFICATION");
+        TITLEPANEL.add(SECURITYVERIFICATIONLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 60));
+
+        EXIT.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
+        EXIT.setForeground(new java.awt.Color(255, 255, 255));
+        EXIT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EXIT.setText("X");
+        EXIT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EXIT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EXITMouseClicked(evt);
+            }
+        });
+        TITLEPANEL.add(EXIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 30, 30));
+
+        FIRSTLAYER.add(TITLEPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(FIRSTLAYER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(FIRSTLAYER, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
 
         setSize(new java.awt.Dimension(400, 400));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void EXITMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EXITMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_EXITMouseClicked
 
     /**
      * @param args the command line arguments
@@ -70,6 +141,9 @@ public class VoterVerifyCode extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VoterVerifyCode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -80,5 +154,14 @@ public class VoterVerifyCode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel EXIT;
+    private javax.swing.JPanel FIRSTLAYER;
+    private javax.swing.JLabel SECURITYVERIFICATIONLABEL;
+    private javax.swing.JLabel SUBLABEL1;
+    private javax.swing.JLabel SUBLABEL2;
+    private javax.swing.JPanel TITLEPANEL;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
