@@ -319,7 +319,7 @@
                       <Font name="Arial Black" size="18" style="1"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="MANAGE RESULTS"/>
+                    <Property name="text" type="java.lang.String" value="VIEW RESULTS"/>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                       <Color id="Hand Cursor"/>
                     </Property>

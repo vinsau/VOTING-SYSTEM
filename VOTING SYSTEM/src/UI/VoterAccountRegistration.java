@@ -1,6 +1,12 @@
 
 package UI;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
+import Database.DatabaseConnection;
+import Utilities.Name;
 import java.awt.Color;
 
 
@@ -28,35 +34,35 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         STEP2LABEL = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         STEP1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        MiddleNameField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        CitizenshipField = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        AddressField = new javax.swing.JTextField();
+        EmailField = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         Next = new javax.swing.JButton();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
+        SurnameField = new javax.swing.JTextField();
+        FirstNameField = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        CivilStatus = new javax.swing.JComboBox<>();
+        GENDER = new javax.swing.JComboBox<>();
+        DOB = new com.toedter.calendar.JDateChooser();
+        PasswordField = new javax.swing.JPasswordField();
+        confirmPasswordField = new javax.swing.JPasswordField();
         STEP2 = new javax.swing.JPanel();
         jLabel16 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        SecurityQuestion = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        SecurityAnswerField = new javax.swing.JTextField();
         BACK = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         SUBMIT = new javax.swing.JButton();
@@ -160,13 +166,6 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         STEP1.setBackground(new java.awt.Color(255, 255, 255));
         STEP1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        STEP1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 330, 36));
-
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("CITIZENSHIP");
         STEP1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, 28));
@@ -183,12 +182,12 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         jLabel7.setText("CONFIRM PASSWORD");
         STEP1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, 28));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        MiddleNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                MiddleNameFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 120, 40));
+        STEP1.add(MiddleNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 120, 40));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel11.setText("DATE OF BIRTH");
@@ -198,37 +197,30 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         jLabel12.setText("GENDER");
         STEP1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 30, -1, 28));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        CitizenshipField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                CitizenshipFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 170, 36));
+        STEP1.add(CitizenshipField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 170, 36));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setText("CIVIL STATUS");
         STEP1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, -1, 28));
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        AddressField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                AddressFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 240, 36));
+        STEP1.add(AddressField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 240, 36));
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        EmailField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                EmailFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 330, 36));
-
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
-            }
-        });
-        STEP1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 330, 36));
+        STEP1.add(EmailField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 330, 36));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setText("FULL NAME");
@@ -244,26 +236,21 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
                 NextMouseClicked(evt);
             }
         });
-        Next.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NextActionPerformed(evt);
-            }
-        });
         STEP1.add(Next, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 340, 120, 50));
 
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+        SurnameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
+                SurnameFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 90, 40));
+        STEP1.add(SurnameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 90, 40));
 
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        FirstNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                FirstNameFieldActionPerformed(evt);
             }
         });
-        STEP1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 190, 40));
+        STEP1.add(FirstNameField, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 190, 40));
 
         jLabel20.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel20.setText("MIDDLE NAME");
@@ -277,24 +264,26 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         jLabel22.setText("FIRST NAME");
         STEP1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
 
-        jComboBox2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SINGLE", "MARRIED", "DIVORCED", "WIDOWED" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        CivilStatus.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        CivilStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SINGLE", "MARRIED", "DIVORCED", "WIDOWED" }));
+        CivilStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                CivilStatusActionPerformed(evt);
             }
         });
-        STEP1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, 150, 40));
+        STEP1.add(CivilStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, 150, 40));
 
-        jComboBox3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MALE", "FEMALE" }));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        GENDER.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        GENDER.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MALE", "FEMALE" }));
+        GENDER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                GENDERActionPerformed(evt);
             }
         });
-        STEP1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 60, 150, 40));
-        STEP1.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, 140, 40));
+        STEP1.add(GENDER, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 60, 150, 40));
+        STEP1.add(DOB, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, 140, 40));
+        STEP1.add(PasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 240, 36));
+        STEP1.add(confirmPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 240, 36));
 
         jTabbedPane1.addTab("", STEP1);
 
@@ -306,26 +295,26 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         jLabel16.setText("SECURITY QUESTIONS");
         STEP2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 160, 20));
 
-        jComboBox1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is your mother's maiden name?", "What high school did you attend?", "What is your favorite movie?", "What is the middle name of your youngest child?", "What was your favorite sport in high school?", "Where were you when you had your first kiss?", "What was the house number and street name you lived in as a child?", "What are the last five digits of your driver's license number?" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        SecurityQuestion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        SecurityQuestion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is your mother's maiden name?", "What high school did you attend?", "What is your favorite movie?", "What is the middle name of your youngest child?", "What was your favorite sport in high school?", "Where were you when you had your first kiss?", "What was the house number and street name you lived in as a child?", "What are the last five digits of your driver's license number?" }));
+        SecurityQuestion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                SecurityQuestionActionPerformed(evt);
             }
         });
-        STEP2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 480, 40));
+        STEP2.add(SecurityQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 480, 40));
 
         jLabel17.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel17.setText("YOUR ANSWER");
         STEP2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        SecurityAnswerField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        SecurityAnswerField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                SecurityAnswerFieldActionPerformed(evt);
             }
         });
-        STEP2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 480, 40));
+        STEP2.add(SecurityAnswerField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 480, 40));
 
         BACK.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         BACK.setText("BACK");
@@ -346,9 +335,9 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
 
         SUBMIT.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         SUBMIT.setText("SUBMIT");
-        SUBMIT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SUBMITActionPerformed(evt);
+        SUBMIT.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SUBMITMouseClicked(evt);
             }
         });
         STEP2.add(SUBMIT, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 350, 140, 40));
@@ -361,33 +350,21 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextActionPerformed
+    private void EmailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NextActionPerformed
+    }//GEN-LAST:event_EmailFieldActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void AddressFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_AddressFieldActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void CitizenshipFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CitizenshipFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_CitizenshipFieldActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void MiddleNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MiddleNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
-
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_MiddleNameFieldActionPerformed
 
     private void MinimizeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizeMouseClicked
         setState(ICONIFIED);
@@ -397,34 +374,40 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_ExitMouseClicked
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void SecurityAnswerFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecurityAnswerFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_SecurityAnswerFieldActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void SecurityQuestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecurityQuestionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_SecurityQuestionActionPerformed
 
     private void BACKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BACKActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BACKActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void SurnameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SurnameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_SurnameFieldActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void FirstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
-
-    private void SUBMITActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SUBMITActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SUBMITActionPerformed
+    }//GEN-LAST:event_FirstNameFieldActionPerformed
 
     private void NextMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NextMouseClicked
-        jTabbedPane1.setSelectedIndex(1);
-        STEP1PANEL.setBackground(new Color(153,153,255));
-        STEP2PANEL.setBackground(new Color(25,18,211));
+        String password = new String(PasswordField.getPassword());
+        String confirmPassword = new String(confirmPasswordField.getPassword());
+        
+        if (password.equals(confirmPassword)){
+            jTabbedPane1.setSelectedIndex(1);
+            STEP1PANEL.setBackground(new Color(153,153,255));
+            STEP2PANEL.setBackground(new Color(25,18,211));
+        } else {
+           JOptionPane.showMessageDialog(null, "Password and confirm password do not match.", "Error", JOptionPane.ERROR_MESSAGE);
+            PasswordField.setText("");
+            confirmPasswordField.setText("");
+            PasswordField.requestFocus();
+        }
     }//GEN-LAST:event_NextMouseClicked
 
     private void BACKMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKMouseClicked
@@ -433,13 +416,13 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         STEP1PANEL.setBackground(new Color(25,18,211));
     }//GEN-LAST:event_BACKMouseClicked
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void CivilStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CivilStatusActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_CivilStatusActionPerformed
 
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+    private void GENDERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GENDERActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox3ActionPerformed
+    }//GEN-LAST:event_GENDERActionPerformed
 
     private void SignInMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInMouseClicked
         Login login = new Login();
@@ -447,6 +430,63 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_SignInMouseClicked
 
+    private void SUBMITMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SUBMITMouseClicked
+                String surname = SurnameField.getText();
+                String firstName = FirstNameField.getText();
+                String middleName = MiddleNameField.getText();
+                String fullName = Name.getFullName(surname, firstName, middleName);
+                java.util.Date dateOfBirth = DOB.getDate();
+                String gender = (String) GENDER.getSelectedItem();
+                String email = EmailField.getText();
+                String citizenship = CitizenshipField.getText();
+                String civilStatus = (String) CivilStatus.getSelectedItem();
+                String password = new String(PasswordField.getPassword());
+                String address = AddressField.getText();
+                String securityQuestion = (String) SecurityQuestion.getSelectedItem();
+                String securityAnswer = SecurityAnswerField.getText();
+                String confirmPassword = new String(confirmPasswordField.getPassword());
+
+                saveVoterToDatabase(email, password, fullName, gender, citizenship, civilStatus, dateOfBirth, address, securityQuestion, securityAnswer);
+                
+                    
+    }//GEN-LAST:event_SUBMITMouseClicked
+
+    private void saveVoterToDatabase(String email, String password, String fullName, String gender, String citizenship, String civilStatus, java.util.Date dateOfBirth, String address, String securityQuestion, String securityAnswer) {
+        Connection connection = null;
+        PreparedStatement statement = null;
+
+        try {
+            connection = DatabaseConnection.getConnection();
+            String sql = "INSERT INTO voteraccsinfotb (email, password, fullname, gender, citizenship, civil_status, date_of_birth, address, security_question, security_answer) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, email);
+            statement.setString(2, password);
+            statement.setString(3, fullName);
+            statement.setString(4, gender);
+            statement.setString(5, citizenship);
+            statement.setString(6, civilStatus);
+            statement.setDate(7, new java.sql.Date(dateOfBirth.getTime()));
+            statement.setString(8, address);
+            statement.setString(9, securityQuestion);
+            statement.setString(10, securityAnswer);
+            statement.executeUpdate();
+
+            JOptionPane.showMessageDialog(null, "Voter registered successfully! Do you want to go back to the Login Page?", "Success", JOptionPane.INFORMATION_MESSAGE);
+            
+            
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error saving voter: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        } finally {
+            DatabaseConnection.closeConnection(connection);
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null, "Error closing statement: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -481,10 +521,19 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField AddressField;
     private javax.swing.JButton BACK;
+    private javax.swing.JTextField CitizenshipField;
+    private javax.swing.JComboBox<String> CivilStatus;
+    private com.toedter.calendar.JDateChooser DOB;
+    private javax.swing.JTextField EmailField;
     private javax.swing.JLabel Exit;
+    private javax.swing.JTextField FirstNameField;
+    private javax.swing.JComboBox<String> GENDER;
+    private javax.swing.JTextField MiddleNameField;
     private javax.swing.JLabel Minimize;
     private javax.swing.JButton Next;
+    private javax.swing.JPasswordField PasswordField;
     private javax.swing.JPanel STEP1;
     private javax.swing.JLabel STEP1LABEL;
     private javax.swing.JPanel STEP1PANEL;
@@ -492,12 +541,12 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
     private javax.swing.JLabel STEP2LABEL;
     private javax.swing.JPanel STEP2PANEL;
     private javax.swing.JButton SUBMIT;
+    private javax.swing.JTextField SecurityAnswerField;
+    private javax.swing.JComboBox<String> SecurityQuestion;
     private javax.swing.JLabel SignIn;
+    private javax.swing.JTextField SurnameField;
     private javax.swing.JPanel TOOLBAR;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JPasswordField confirmPasswordField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -516,14 +565,5 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
