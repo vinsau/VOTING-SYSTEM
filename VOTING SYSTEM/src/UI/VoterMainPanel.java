@@ -2,24 +2,13 @@ package UI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.RenderingHints;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import javax.swing.border.AbstractBorder;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -3395,16 +3384,20 @@ public class VoterMainPanel extends javax.swing.JFrame {
         OPTIONS.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         PROFILE.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        OPTIONS.add(PROFILE, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, -1, 30));
+        PROFILE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PROFILE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/USERPROFILE.png"))); // NOI18N
+        OPTIONS.add(PROFILE, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 190, 110));
 
         ID.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        ID.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ID.setText("View your profile ->");
+        ID.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ID.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 IDMouseClicked(evt);
             }
         });
-        OPTIONS.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, 30));
+        OPTIONS.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 190, 30));
 
         dashboardpanel.setBackground(new java.awt.Color(255, 255, 255));
         dashboardpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -3597,7 +3590,8 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_settingsMouseClicked
 
     private void IDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_IDMouseClicked
-        // TODO add your handling code here:
+       OPTIONSTAB.setSelectedIndex(3);
+       SETTINGSTAB.setSelectedIndex(2);
     }//GEN-LAST:event_IDMouseClicked
 
     private void logoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_logoutMouseClicked
@@ -3649,7 +3643,12 @@ public class VoterMainPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_BACKBUTTONMouseClicked
 
     private void BACKBUTTON2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON2MouseClicked
+        OPTIONSTAB.setSelectedIndex(3);
         SETTINGSTAB.setSelectedIndex(0);
+        dashboardpanel.setBackground(new Color(255, 255, 255));
+        settingspanel.setBackground(new Color(204, 204, 204));
+        resultspanel.setBackground(new Color(255, 255, 255));
+        electionspanel.setBackground(new Color(255, 255, 255));
     }//GEN-LAST:event_BACKBUTTON2MouseClicked
 
     private void BACKBUTTON3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BACKBUTTON3MouseClicked
