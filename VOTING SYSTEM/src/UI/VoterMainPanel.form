@@ -4718,9 +4718,6 @@
               <SubComponents>
                 <Component class="javax.swing.JButton" name="BackResultsButton">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="1"/>
                     </Property>
@@ -5495,7 +5492,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="140" y="350" width="800" height="80"/>
+                          <AbsoluteConstraints x="140" y="320" width="800" height="80"/>
                         </Constraint>
                       </Constraints>
 
@@ -5560,7 +5557,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="140" y="460" width="800" height="80"/>
+                          <AbsoluteConstraints x="140" y="430" width="800" height="80"/>
                         </Constraint>
                       </Constraints>
 

@@ -2520,7 +2520,6 @@ public class VoterMainPanel extends javax.swing.JFrame {
         ResultsLabelPanel.setBackground(new java.awt.Color(0, 0, 0));
         ResultsLabelPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BackResultsButton.setBackground(new java.awt.Color(255, 255, 255));
         BackResultsButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         BackResultsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/BACKSMALL.png"))); // NOI18N
         BackResultsButton.setText("Back");
@@ -2868,7 +2867,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
         PRIVACYNPOLICYICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/PRIVACY.png"))); // NOI18N
         PrivacyAndPolicy.add(PRIVACYNPOLICYICON, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, -1, 80));
 
-        MAIN.add(PrivacyAndPolicy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 800, 80));
+        MAIN.add(PrivacyAndPolicy, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 800, 80));
 
         Feedback.setBackground(new java.awt.Color(255, 255, 255));
         Feedback.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -2914,7 +2913,7 @@ public class VoterMainPanel extends javax.swing.JFrame {
             .addComponent(FEEDBACKARROW, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        MAIN.add(Feedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 800, 80));
+        MAIN.add(Feedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 430, 800, 80));
 
         SETTINGSTAB.addTab("tab1", MAIN);
 
