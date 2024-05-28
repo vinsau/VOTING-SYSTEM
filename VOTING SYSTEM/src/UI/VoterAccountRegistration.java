@@ -20,6 +20,8 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         TOOLBAR = new javax.swing.JPanel();
         Minimize = new javax.swing.JLabel();
         Exit = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        SignIn = new javax.swing.JLabel();
         STEP1PANEL = new javax.swing.JPanel();
         STEP1LABEL = new javax.swing.JLabel();
         STEP2PANEL = new javax.swing.JPanel();
@@ -76,6 +78,7 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TOOLBAR.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        TOOLBAR.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Minimize.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         Minimize.setText("—");
@@ -85,6 +88,7 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
                 MinimizeMouseClicked(evt);
             }
         });
+        TOOLBAR.add(Minimize, new org.netbeans.lib.awtextra.AbsoluteConstraints(928, 16, -1, -1));
 
         Exit.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         Exit.setText("X");
@@ -94,27 +98,22 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
                 ExitMouseClicked(evt);
             }
         });
+        TOOLBAR.add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(964, 16, -1, -1));
 
-        javax.swing.GroupLayout TOOLBARLayout = new javax.swing.GroupLayout(TOOLBAR);
-        TOOLBAR.setLayout(TOOLBARLayout);
-        TOOLBARLayout.setHorizontalGroup(
-            TOOLBARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TOOLBARLayout.createSequentialGroup()
-                .addContainerGap(925, Short.MAX_VALUE)
-                .addComponent(Minimize)
-                .addGap(18, 18, 18)
-                .addComponent(Exit)
-                .addGap(22, 22, 22))
-        );
-        TOOLBARLayout.setVerticalGroup(
-            TOOLBARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TOOLBARLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(TOOLBARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Minimize)
-                    .addComponent(Exit))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Already have an account? Back to");
+        TOOLBAR.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 7, 260, 40));
+
+        SignIn.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        SignIn.setText("Sign In");
+        SignIn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SignIn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SignInMouseClicked(evt);
+            }
+        });
+        TOOLBAR.add(SignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 6, -1, 40));
 
         getContentPane().add(TOOLBAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 50));
 
@@ -442,6 +441,12 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
+    private void SignInMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInMouseClicked
+        Login login = new Login();
+        login.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_SignInMouseClicked
+
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -487,11 +492,13 @@ public class VoterAccountRegistration extends javax.swing.JFrame {
     private javax.swing.JLabel STEP2LABEL;
     private javax.swing.JPanel STEP2PANEL;
     private javax.swing.JButton SUBMIT;
+    private javax.swing.JLabel SignIn;
     private javax.swing.JPanel TOOLBAR;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private com.toedter.calendar.JDateChooser jDateChooser2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;

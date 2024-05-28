@@ -25,7 +25,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        SignUp = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         jLabel9 = new javax.swing.JLabel();
@@ -38,7 +38,7 @@ public class Login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        RememberMe = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
         AdminPortal = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -99,16 +99,16 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setText("Welcome back!");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 290, 64));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Sign Up.");
-        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        SignUp.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        SignUp.setForeground(new java.awt.Color(255, 255, 255));
+        SignUp.setText("Sign Up.");
+        SignUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SignUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                SignUpMouseClicked(evt);
             }
         });
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, -1, -1));
+        jPanel3.add(SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
@@ -118,11 +118,6 @@ public class Login extends javax.swing.JFrame {
         txtPassword.setFont(txtPassword.getFont().deriveFont(txtPassword.getFont().getSize()+2f));
         txtPassword.setForeground(new java.awt.Color(255, 255, 255));
         txtPassword.setBorder(null);
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
-            }
-        });
         jPanel3.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 200, 20));
 
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
@@ -177,13 +172,13 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(25, 18, 211));
 
-        jCheckBox1.setBackground(new java.awt.Color(25, 18, 211));
-        jCheckBox1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jCheckBox1.setText("Remember me");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+        RememberMe.setBackground(new java.awt.Color(25, 18, 211));
+        RememberMe.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        RememberMe.setForeground(new java.awt.Color(255, 255, 255));
+        RememberMe.setText("Remember me");
+        RememberMe.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RememberMeMouseClicked(evt);
             }
         });
 
@@ -196,7 +191,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jCheckBox1)
+                .addComponent(RememberMe)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(jLabel12))
         );
@@ -205,7 +200,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
+                    .addComponent(RememberMe)
                     .addComponent(jLabel12)))
         );
 
@@ -231,10 +226,6 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
     private void ShowMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowMouseClicked
         txtPassword.setEchoChar((char)8226);
         Disable.setVisible(true);
@@ -243,13 +234,11 @@ public class Login extends javax.swing.JFrame {
 
     }//GEN-LAST:event_ShowMouseClicked
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
-
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseClicked
+    private void SignUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignUpMouseClicked
+        VoterAccountRegistration register = new VoterAccountRegistration();
+        register.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_SignUpMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         setState(ICONIFIED);
@@ -260,7 +249,9 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void AdminPortalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdminPortalMouseClicked
-        
+        AdminLogin admin = new AdminLogin();
+        admin.setVisible(true);
+        dispose();
     }//GEN-LAST:event_AdminPortalMouseClicked
 
     private void DisableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisableMouseClicked
@@ -269,6 +260,10 @@ public class Login extends javax.swing.JFrame {
         Disable.setEnabled(false);
         Show.setEnabled(true);
     }//GEN-LAST:event_DisableMouseClicked
+
+    private void RememberMeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RememberMeMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RememberMeMouseClicked
 
     
     public static void main(String args[]) {
@@ -306,9 +301,10 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AdminPortal;
     private javax.swing.JLabel Disable;
+    private javax.swing.JCheckBox RememberMe;
     private javax.swing.JLabel Show;
+    private javax.swing.JLabel SignUp;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -323,7 +319,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
