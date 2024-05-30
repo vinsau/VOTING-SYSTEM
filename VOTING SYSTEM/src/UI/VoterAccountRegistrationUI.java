@@ -318,6 +318,11 @@ public class VoterAccountRegistrationUI extends javax.swing.JFrame {
                 VerifyCodeButtonMouseClicked(evt);
             }
         });
+        VerifyCodeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerifyCodeButtonActionPerformed(evt);
+            }
+        });
         STEP2.add(VerifyCodeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 300, 50));
 
         EmailProvided.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
@@ -411,8 +416,18 @@ public class VoterAccountRegistrationUI extends javax.swing.JFrame {
     }//GEN-LAST:event_SubmitButtonMouseClicked
 
     private void VerifyCodeButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VerifyCodeButtonMouseClicked
-      
+      try{
+          VoterVerifyCodeUI verifycode = new VoterVerifyCodeUI();
+          verifycode.setVisible(true);
+         
+      } catch (Exception e){
+          e.printStackTrace();
+      }
     }//GEN-LAST:event_VerifyCodeButtonMouseClicked
+
+    private void VerifyCodeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerifyCodeButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VerifyCodeButtonActionPerformed
 
     
    
