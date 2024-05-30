@@ -1,11 +1,12 @@
 package UI;
 
 import java.awt.Color;
+import javax.swing.JOptionPane;
 import javax.swing.SwingWorker;
 
-public class Loading extends javax.swing.JFrame {
+public class LoadingUI extends javax.swing.JFrame {
 
-    public Loading() {
+    public LoadingUI() {
         initComponents();
     }
 
@@ -77,19 +78,19 @@ public class Loading extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Loading.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoadingUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Loading.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoadingUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Loading.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoadingUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Loading.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoadingUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
-        Loading loading = new Loading();
+        LoadingUI loading = new LoadingUI();
         loading.progressBar.setForeground(Color.BLUE);
-          
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -101,14 +102,19 @@ public class Loading extends javax.swing.JFrame {
                 Thread.sleep(40);
                 loading.progressBar.setValue(i);
                 loading.percentageLabel.setText(Integer.toString(i) + "%");
+                
             }
         } catch (Exception e) {
         }
-        Login login = new Login();
-        loading.setVisible(false);
-        login.setVisible(true);
-        
-        loading.dispose();
+        try {
+            LoginUI login = new LoginUI();
+            login.setVisible(true);
+            loading.dispose();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "An error occurred while trying to open the window: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
+        }
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

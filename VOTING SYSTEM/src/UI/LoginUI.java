@@ -1,19 +1,20 @@
-
 package UI;
 
 import Controller.LoginController;
 import Model.LoginModel;
+import static Utilities.LoginCredentialsUtility.isValidCredentials;
 import java.util.prefs.Preferences;
 import javax.swing.JOptionPane;
+import Utilities.RememberMeUtility;
+import Utilities.VerificationCodeUtility;
 
+public class LoginUI extends javax.swing.JFrame {
 
-public class Login extends javax.swing.JFrame {
-
-    
-    public Login() {
+    public LoginUI() {
         initComponents();
-        emailField.setBackground(new java.awt.Color(0,0,0,1));
-        passwordField.setBackground(new java.awt.Color(0,0,0,1));
+        emailField.setBackground(new java.awt.Color(0, 0, 0, 1));
+        passwordField.setBackground(new java.awt.Color(0, 0, 0, 1));
+        loadSavedCredentials();
     }
 
     @SuppressWarnings("unchecked")
@@ -236,7 +237,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ShowMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ShowMouseClicked
-        passwordField.setEchoChar((char)8226);
+        passwordField.setEchoChar((char) 8226);
         Disable.setVisible(true);
         Disable.setEnabled(true);
         Show.setEnabled(false);
@@ -244,7 +245,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_ShowMouseClicked
 
     private void SignUpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignUpMouseClicked
-        VoterAccountRegistration register = new VoterAccountRegistration();
+        VoterAccountRegistrationUI register = new VoterAccountRegistrationUI();
         register.setVisible(true);
         dispose();
     }//GEN-LAST:event_SignUpMouseClicked
@@ -258,42 +259,69 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_EXITMouseClicked
 
     private void AdminPortalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdminPortalMouseClicked
-        AdminLogin admin = new AdminLogin();
+        AdminLoginUI admin = new AdminLoginUI();
         admin.setVisible(true);
         dispose();
     }//GEN-LAST:event_AdminPortalMouseClicked
 
     private void DisableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DisableMouseClicked
-        passwordField.setEchoChar((char)0);
+        passwordField.setEchoChar((char) 0);
         Disable.setVisible(false);
         Disable.setEnabled(false);
         Show.setEnabled(true);
     }//GEN-LAST:event_DisableMouseClicked
 
     private void RememberMeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RememberMeMouseClicked
-        
+
     }//GEN-LAST:event_RememberMeMouseClicked
 
     private void LoginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginButtonMouseClicked
-        String email = emailField.getText();
-            String password = new String(passwordField.getPassword());
+    String email = emailField.getText();
+    String password = new String(passwordField.getPassword());
+    boolean rememberMe = RememberMe.isSelected();
 
-            LoginModel loginModel = new LoginModel(email, password);
-            LoginController loginController = new LoginController();
+     System.out.println("Email: " + email);
+    System.out.println("Password: " + password);
+    
+    // Validate credentials
+    if (isValidCredentials(email, password)) {
+         System.out.println("Credentials are valid");
+        LoginModel loginModel = new LoginModel(email, password);
+        LoginController loginController = new LoginController();
 
-            if (loginController.authenticate(loginModel)) {
-                JOptionPane.showMessageDialog(null, "Login successful!");
-                VoterMainPanel votermain = new VoterMainPanel();
-                votermain.setVisible(true);
-                this.dispose();
-                
+        if (loginController.authenticate(loginModel)) {
+            System.out.println("Authentication successful");
+            if (rememberMe) {
+                RememberMeUtility.saveCredentials(email, password);
+                System.out.println("Remember me: credentials saved");
             } else {
-                JOptionPane.showMessageDialog(null, "Invalid email or password.");
+                RememberMeUtility.clearCredentials();
+                System.out.println("Remember me: credentials cleared");
             }
+
+            JOptionPane.showMessageDialog(null, "Login successful!");
+            VoterMainPanelUI mainpanel = new VoterMainPanelUI();
+            mainpanel.setVisible(true);
+            this.dispose();
+        } else {
+            System.out.println("Authentication failed");
+            JOptionPane.showMessageDialog(null, "Invalid email or password.", "Login Error", JOptionPane.ERROR_MESSAGE);
+        }
+}else{
+        System.out.println("Credentials are not valid");
+    }
+        
     }//GEN-LAST:event_LoginButtonMouseClicked
 
-   
-    
+    private void loadSavedCredentials() {
+        String[] credentials = RememberMeUtility.loadCredentials();
+        emailField.setText(credentials[0]);
+        passwordField.setText(credentials[1]);
+        if (!credentials[0].isEmpty() && !credentials[1].isEmpty()) {
+            RememberMe.setSelected(true);
+        }
+    }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -308,20 +336,21 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new LoginUI().setVisible(true);
             }
         });
     }

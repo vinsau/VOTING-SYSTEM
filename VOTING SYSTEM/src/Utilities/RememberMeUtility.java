@@ -2,7 +2,7 @@ package Utilities;
 
 import java.util.prefs.Preferences;
 
-public class RememberMe {
+public class RememberMeUtility {
     private static final String PREFS_NAME = "voterLoginPrefs";
     private static final String EMAIL_KEY = "email";
     private static final String PASSWORD_KEY = "password";

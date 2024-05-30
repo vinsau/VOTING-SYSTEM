@@ -5,10 +5,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 
 
-public class AdminLogin extends javax.swing.JFrame {
+public class AdminLoginUI extends javax.swing.JFrame {
 
     
-    public AdminLogin() {
+    public AdminLoginUI() {
         initComponents();
         
         
@@ -175,7 +175,7 @@ public class AdminLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPasswordActionPerformed
 
     private void UserLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserLoginMouseClicked
-        Login login = new Login();
+        LoginUI login = new LoginUI();
         login.setVisible(true);
         dispose();
     }//GEN-LAST:event_UserLoginMouseClicked
@@ -187,7 +187,7 @@ public class AdminLogin extends javax.swing.JFrame {
         try{
         if (username.equals("admin") && password.equals("aemtracorps123")) {
             JOptionPane.showMessageDialog(this, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
-            AdminMainPanel admin = new AdminMainPanel();
+            AdminMainPanelUI admin = new AdminMainPanelUI();
             admin.setVisible(true);
             this.dispose();
         } else {
@@ -214,20 +214,21 @@ public class AdminLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdminLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminLoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdminLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminLoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdminLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminLoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdminLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AdminLoginUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdminLogin().setVisible(true);
+                new AdminLoginUI().setVisible(true);
             }
         });
     }

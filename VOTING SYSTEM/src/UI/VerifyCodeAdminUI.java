@@ -8,12 +8,12 @@ package UI;
  *
  * @author johnv
  */
-public class VerifyCodeAdmin extends javax.swing.JFrame {
+public class VerifyCodeAdminUI extends javax.swing.JFrame {
 
     /**
      * Creates new form VerifyCodeAdmin
      */
-    public VerifyCodeAdmin() {
+    public VerifyCodeAdminUI() {
         initComponents();
     }
 
@@ -67,7 +67,6 @@ public class VerifyCodeAdmin extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("<html>Click send to obtain the verification code. The code will be sent to your email.</html>");
         jLabel2.setToolTipText("");
@@ -140,20 +139,21 @@ public class VerifyCodeAdmin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VerifyCodeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerifyCodeAdminUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VerifyCodeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerifyCodeAdminUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VerifyCodeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerifyCodeAdminUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VerifyCodeAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VerifyCodeAdminUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VerifyCodeAdmin().setVisible(true);
+                new VerifyCodeAdminUI().setVisible(true);
             }
         });
     }

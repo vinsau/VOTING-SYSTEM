@@ -1,12 +1,12 @@
 
 package Main;
 
-import UI.Loading;
+import UI.LoadingUI;
 
 public class Main {
 
     public static void main(String[] args) {
-      Loading.main(args);
+      LoadingUI.main(args);
     }
     
 }

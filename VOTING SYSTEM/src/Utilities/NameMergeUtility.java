@@ -2,7 +2,7 @@
 package Utilities;
 
 
-public class Name {
+public class NameMergeUtility {
     public static String getFullName(String surname, String firstName, String middleName) {
         
         StringBuilder fullName = new StringBuilder();
