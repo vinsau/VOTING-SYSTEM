@@ -55,9 +55,8 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
         Search = new javax.swing.JLabel();
         GOPANEL = new javax.swing.JPanel();
         GO = new javax.swing.JLabel();
-        DeleteButtonAccounts = new javax.swing.JButton();
-        LoadButtonAcccounts = new javax.swing.JButton();
-        UpdateButtonAccounts = new javax.swing.JButton();
+        DeleteVoterBtn = new javax.swing.JButton();
+        LoadVoterBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         voterTable = new javax.swing.JTable();
         ManageElectionsPanel = new javax.swing.JPanel();
@@ -74,7 +73,7 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         DeleteBtn = new javax.swing.JButton();
         AddBtn = new javax.swing.JButton();
-        UpdateBtnElections = new javax.swing.JButton();
+        LoadBtn = new javax.swing.JButton();
         ViewResults = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         ResultsTable = new javax.swing.JTable();
@@ -257,6 +256,11 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
 
         SearchField.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         SearchField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        SearchField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SearchFieldMouseClicked(evt);
+            }
+        });
         Options.add(SearchField, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, 240, 40));
 
         Search.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -288,43 +292,27 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
 
         Options.add(GOPANEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 130, 40, 40));
 
-        DeleteButtonAccounts.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        DeleteButtonAccounts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/DELETE.png"))); // NOI18N
-        DeleteButtonAccounts.setText("Delete");
-        DeleteButtonAccounts.setIconTextGap(10);
-        DeleteButtonAccounts.addMouseListener(new java.awt.event.MouseAdapter() {
+        DeleteVoterBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        DeleteVoterBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/DELETE.png"))); // NOI18N
+        DeleteVoterBtn.setText("Delete");
+        DeleteVoterBtn.setIconTextGap(10);
+        DeleteVoterBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DeleteButtonAccountsMouseClicked(evt);
+                DeleteVoterBtnMouseClicked(evt);
             }
         });
-        Options.add(DeleteButtonAccounts, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 130, 40));
+        Options.add(DeleteVoterBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, 130, 40));
 
-        LoadButtonAcccounts.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        LoadButtonAcccounts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/REFRESH.png"))); // NOI18N
-        LoadButtonAcccounts.setText("Load");
-        LoadButtonAcccounts.setIconTextGap(10);
-        LoadButtonAcccounts.addMouseListener(new java.awt.event.MouseAdapter() {
+        LoadVoterBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        LoadVoterBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/REFRESH.png"))); // NOI18N
+        LoadVoterBtn.setText("Load");
+        LoadVoterBtn.setIconTextGap(10);
+        LoadVoterBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                LoadButtonAcccountsMouseClicked(evt);
+                LoadVoterBtnMouseClicked(evt);
             }
         });
-        Options.add(LoadButtonAcccounts, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 140, 40));
-
-        UpdateButtonAccounts.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        UpdateButtonAccounts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/UPDATE.png"))); // NOI18N
-        UpdateButtonAccounts.setText("Update");
-        UpdateButtonAccounts.setIconTextGap(10);
-        UpdateButtonAccounts.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                UpdateButtonAccountsMouseClicked(evt);
-            }
-        });
-        UpdateButtonAccounts.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UpdateButtonAccountsActionPerformed(evt);
-            }
-        });
-        Options.add(UpdateButtonAccounts, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 140, 40));
+        Options.add(LoadVoterBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 140, 40));
 
         ManageAccountsPanel.add(Options, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 960, 190));
 
@@ -346,7 +334,6 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        voterTable.setRowHeight(20);
         jScrollPane1.setViewportView(voterTable);
 
         ManageAccountsPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 1200, 360));
@@ -457,6 +444,11 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
         DeleteBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/DELETE.png"))); // NOI18N
         DeleteBtn.setText("Delete");
         DeleteBtn.setIconTextGap(10);
+        DeleteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DeleteBtnMouseClicked(evt);
+            }
+        });
         ManageElectionsPanel.add(DeleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 530, 130, 40));
 
         AddBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -470,16 +462,16 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
         });
         ManageElectionsPanel.add(AddBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, 115, 40));
 
-        UpdateBtnElections.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        UpdateBtnElections.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/UPDATE.png"))); // NOI18N
-        UpdateBtnElections.setText("Update");
-        UpdateBtnElections.setIconTextGap(10);
-        UpdateBtnElections.addMouseListener(new java.awt.event.MouseAdapter() {
+        LoadBtn.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        LoadBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/UPDATE.png"))); // NOI18N
+        LoadBtn.setText("Load");
+        LoadBtn.setIconTextGap(10);
+        LoadBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                UpdateBtnElectionsMouseClicked(evt);
+                LoadBtnMouseClicked(evt);
             }
         });
-        ManageElectionsPanel.add(UpdateBtnElections, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 530, 140, 40));
+        ManageElectionsPanel.add(LoadBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(205, 530, 140, 40));
 
         MainTab.addTab("tab3", ManageElectionsPanel);
 
@@ -586,190 +578,31 @@ public class AdminMainPanelUI extends javax.swing.JFrame {
         switchPanel(0, Home, ManageAccounts, ManageElections, ManageResults);
     }//GEN-LAST:event_HomeMouseClicked
 
-    private void LoadButtonAcccountsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoadButtonAcccountsMouseClicked
+    private void LoadVoterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoadVoterBtnMouseClicked
 
-        try {
-            Connection conn = DatabaseConnection.getConnection();
-            String sql = "SELECT * FROM voteraccsinfotb";
+        loadData();
+    }//GEN-LAST:event_LoadVoterBtnMouseClicked
 
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sql);
+    private void DeleteVoterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteVoterBtnMouseClicked
+        deleteVoter();
 
-            while (rs.next()) {
-                String fullname = rs.getString("fullname");
-                String email = rs.getString("email");
-                LocalDate date = rs.getDate("date_of_birth").toLocalDate();
-                String gender = rs.getString("gender");
-                String citizenship = rs.getString("citizenship");
-                String civilStatus = rs.getString("civil_status");
-                String address = rs.getString("address");
-                String security_question = rs.getString("security_question");
-                String security_answer = rs.getString("security_answer");
-
-                String dateString = date.toString();
-                String tbData[] = {fullname, email, dateString, gender, citizenship, civilStatus, address, security_question, security_answer};
-                DefaultTableModel tblModel = (DefaultTableModel) voterTable.getModel();
-                tblModel.addRow(tbData);
-
-            }
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, "An error occurred while retrieving voter data: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-            e.printStackTrace();
-        }
-
-        LoadButtonAcccounts.setEnabled(false);
-        LoadButtonAcccounts.removeMouseListener(LoadButtonAcccounts.getMouseListeners()[0]);
-    }//GEN-LAST:event_LoadButtonAcccountsMouseClicked
-
-    private void DeleteButtonAccountsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteButtonAccountsMouseClicked
-        int[] selectedRows = voterTable.getSelectedRows();
-int emailColumnIndex = 0; // Assuming email is the first column (index 0)
-
-if (selectedRows.length > 0) {
-    int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete the selected rows?", "Confirm Deletion", JOptionPane.YES_NO_OPTION);
-    if (confirm == JOptionPane.YES_OPTION) {
-        Connection conn = null;
-        PreparedStatement pstmt = null;
-        try {
-            conn = DatabaseConnection.getConnection();
-            String sql = "DELETE FROM voteraccsinfotb WHERE email = ?";
-            pstmt = conn.prepareStatement(sql);
-
-            DefaultTableModel tblModel = (DefaultTableModel) voterTable.getModel();
-            for (int i = 0; i < selectedRows.length; i++) {
-                String email = (String) tblModel.getValueAt(selectedRows[i], emailColumnIndex);
-                pstmt.setString(1, email);
-                pstmt.executeUpdate();
-            }
-
-            
-            for (int i = selectedRows.length - 1; i >= 0; i--) {
-                tblModel.removeRow(selectedRows[i]);
-            }
-
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, "Error deleting rows: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        } finally {
-            if (pstmt != null) {
-                try {
-                    pstmt.close();
-                } catch (SQLException e) {
-                    JOptionPane.showMessageDialog(this, "Error closing statement: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    JOptionPane.showMessageDialog(this, "Error closing connection: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        }
-    }
-} else {
-    if (voterTable.getRowCount() == 0) {
-        JOptionPane.showMessageDialog(this, "Table is empty", "Error", JOptionPane.ERROR_MESSAGE);
-    } else {
-        JOptionPane.showMessageDialog(this, "Please select rows to delete", "Error", JOptionPane.ERROR_MESSAGE);
-    }
-}
-
-    }//GEN-LAST:event_DeleteButtonAccountsMouseClicked
-
-    private void UpdateButtonAccountsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateButtonAccountsMouseClicked
-
-        DefaultTableModel tblModel = (DefaultTableModel) voterTable.getModel();
-
-try {
-    Connection conn = DatabaseConnection.getConnection();
-    String sql = "SELECT * FROM voteraccsinfotb";
-    Statement stmt = conn.createStatement();
-    ResultSet rs = stmt.executeQuery(sql);
-
-    while (rs.next()) {
-        String fullname = rs.getString("fullname");
-        String email = rs.getString("email");
-        LocalDate date = rs.getDate("date_of_birth").toLocalDate();
-        String gender = rs.getString("gender");
-        String citizenship = rs.getString("citizenship");
-        String civilStatus = rs.getString("civil_status");
-        String address = rs.getString("address");
-        String securityQuestion = rs.getString("security_question");
-        String securityAnswer = rs.getString("security_answer");
-
-        String tbData[] = {fullname, email, date.toString(), gender, citizenship, civilStatus, address, securityQuestion, securityAnswer};
-        tblModel.addRow(tbData);
-    }
-    
-    // Close resources
-    rs.close();
-    stmt.close();
-    conn.close();
-} catch (SQLException e) {
-    JOptionPane.showMessageDialog(this, "Error refreshing table: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-}
-
-
-
-    }//GEN-LAST:event_UpdateButtonAccountsMouseClicked
+    }//GEN-LAST:event_DeleteVoterBtnMouseClicked
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
-        if (PositionField.getText().isEmpty() || BallotField.getText().isEmpty() || CandidateNameField.getText().isEmpty()) {
-    JOptionPane.showMessageDialog(this, "Please enter all data!");
-} else {
-    try {
-        Connection conn = DatabaseConnection.getConnection();
-        String sql = "INSERT INTO createcandidatestb (position, ballot_number, candidate_name) VALUES (?, ?, ?)";
-        PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setString(1, PositionField.getText());
-        pstmt.setString(2, BallotField.getText());
-        pstmt.setString(3, CandidateNameField.getText());
-        pstmt.executeUpdate();
-
-        DefaultTableModel tblModel = (DefaultTableModel) ElectionsTable.getModel();
-        tblModel.addRow(new Object[]{PositionField.getText(), BallotField.getText(), CandidateNameField.getText()});
-
-        JOptionPane.showMessageDialog(this, "Added Successfully!");
-
-        PositionField.setText("");
-        BallotField.setText("");
-        CandidateNameField.setText("");
-
-        pstmt.close();
-        conn.close();
-    } catch (SQLException e) {
-        JOptionPane.showMessageDialog(this, "Error adding row: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-    }
-}
-
+        addCandidate();
     }//GEN-LAST:event_AddBtnMouseClicked
 
-    private void UpdateBtnElectionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateBtnElectionsMouseClicked
-        DefaultTableModel tblModel = (DefaultTableModel) ElectionsTable.getModel();
-        tblModel.setRowCount(0);
+    private void LoadBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoadBtnMouseClicked
+        loadData();
+    }//GEN-LAST:event_LoadBtnMouseClicked
 
-        try {
-            Connection conn = DatabaseConnection.getConnection();
-            String sql = "SELECT * FROM createcandidatestb";
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(sql);
+    private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
+        deleteCandidate();
+    }//GEN-LAST:event_DeleteBtnMouseClicked
 
-            while (rs.next()) {
-                String position = rs.getString("position");
-                int ballotnum = rs.getInt("ballotnum");
-                String candidatename = rs.getString("candidatename");
-
-                String tbData1[] = {PositionField.getText(), BallotField.getText(), CandidateNameField.getText()};
-                tblModel.addRow(tbData1);
-            }
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(this, "Error refreshing table: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }//GEN-LAST:event_UpdateBtnElectionsMouseClicked
-
-    private void UpdateButtonAccountsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateButtonAccountsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_UpdateButtonAccountsActionPerformed
+    private void SearchFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchFieldMouseClicked
+        searchVoter();
+    }//GEN-LAST:event_SearchFieldMouseClicked
 
     public void selectPanel(JTabbedPane targetTab, int index) {
         targetTab.setSelectedIndex(index);
@@ -795,6 +628,117 @@ try {
         changePanel3.setBackground(new Color(255, 255, 255));
 
         MainTab.setSelectedIndex(index);
+    }
+    
+    private void loadData() {
+       tableModel.setRowCount(0); // Clear existing data
+        try (Connection connection = DatabaseConnection.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery("SELECT * FROM candidatecreationtb")) {
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String position = resultSet.getString("position");
+                tableModel.addRow(new Object[]{id, name, position});
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void addCandidate() {
+        String name = CandidateField.getText();
+        String position = PositionField.getText();
+
+        if (name.isEmpty() || position.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Name and Position must not be empty");
+            return;
+        }
+
+        try (Connection connection = DatabaseConnection.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO candidatecreationtb (name, position) VALUES (?, ?)")) {
+
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2, position);
+            preparedStatement.executeUpdate();
+            loadData();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void deleteCandidate() {
+        int selectedRow = ElectionsTable.getSelectedRow();
+        if (selectedRow == -1) {
+            JOptionPane.showMessageDialog(this, "Select a row to delete");
+            return;
+        }
+
+        int id = (int) tableModel.getValueAt(selectedRow, 0);
+
+        try (Connection connection = DatabaseConnection.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM candidatecreationtb WHERE id = ?")) {
+
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+            loadData();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void deleteVoter() {
+        int selectedRow = voterTable.getSelectedRow();
+        if (selectedRow == -1) {
+            JOptionPane.showMessageDialog(this, "Select a row to delete");
+            return;
+        }
+
+        int id = (int) tableModel.getValueAt(selectedRow, 0);
+
+        try (Connection connection = DatabaseConnection.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM voteraccsinfotb WHERE id = ?")) {
+
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+            loadData();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void searchVoter() {
+        String searchText = SearchField.getText();
+        if (searchText.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Enter a search term");
+            return;
+        }
+
+        tableModel.setRowCount(0); // Clear existing data
+        try (Connection connection = DatabaseConnection.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM voteraccsinfotb WHERE name LIKE ? OR address LIKE ?")) {
+
+            String searchPattern = "%" + searchText + "%";
+            preparedStatement.setString(1, searchPattern);
+            preparedStatement.setString(2, searchPattern);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                int age = resultSet.getInt("age");
+                String address = resultSet.getString("address");
+                tableModel.addRow(new Object[]{id, name, age, address});
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String args[]) {
@@ -840,7 +784,7 @@ try {
     private javax.swing.JTextField CandidateField;
     private javax.swing.JLabel CandidateNameField;
     private javax.swing.JButton DeleteBtn;
-    private javax.swing.JButton DeleteButtonAccounts;
+    private javax.swing.JButton DeleteVoterBtn;
     private javax.swing.JPanel Design1;
     private javax.swing.JLabel EXIT;
     private javax.swing.JPanel ElectionsMajorContainer;
@@ -851,7 +795,8 @@ try {
     private javax.swing.JPanel Home;
     private javax.swing.JLabel HomeLabel;
     private javax.swing.JPanel HomePanel;
-    private javax.swing.JButton LoadButtonAcccounts;
+    private javax.swing.JButton LoadBtn;
+    private javax.swing.JButton LoadVoterBtn;
     private javax.swing.JLabel MINIMIZE;
     private javax.swing.JPanel MainContainer;
     private javax.swing.JLabel MainElectionsLabel;
@@ -873,8 +818,6 @@ try {
     private javax.swing.JTextField SearchField;
     private javax.swing.JPanel Separator;
     private javax.swing.JPanel Toolbar;
-    private javax.swing.JButton UpdateBtnElections;
-    private javax.swing.JButton UpdateButtonAccounts;
     private javax.swing.JPanel ViewResults;
     private javax.swing.JPanel VoterINFO;
     private javax.swing.JLabel VoterINFOLabel;
