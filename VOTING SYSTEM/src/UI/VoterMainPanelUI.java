@@ -107,8 +107,6 @@ public class VoterMainPanelUI extends javax.swing.JFrame {
         INDEX1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         ElectionsTable = new javax.swing.JTable();
-        ElectionTypeChoice = new javax.swing.JComboBox<>();
-        ElectionTypeLabel = new javax.swing.JLabel();
         PositionChoice = new javax.swing.JComboBox<>();
         BallotLabel = new javax.swing.JLabel();
         PositionLabel = new javax.swing.JLabel();
@@ -362,59 +360,59 @@ public class VoterMainPanelUI extends javax.swing.JFrame {
         ElectionsTable.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         ElectionsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Election Type", "Position", "Ballot #", "Candidate Name", "Image"
+                "Position", "Ballot #", "Candidate Name", "Image"
             }
         ));
         ElectionsTable.setEnabled(false);
@@ -423,35 +421,27 @@ public class VoterMainPanelUI extends javax.swing.JFrame {
 
         INDEX1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 630, 630));
 
-        ElectionTypeChoice.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        ElectionTypeChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-        INDEX1.add(ElectionTypeChoice, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 160, 350, 40));
-
-        ElectionTypeLabel.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        ElectionTypeLabel.setText("ELECTION TYPE:");
-        INDEX1.add(ElectionTypeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 190, -1));
-
         PositionChoice.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         PositionChoice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
-        INDEX1.add(PositionChoice, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, 350, 40));
+        INDEX1.add(PositionChoice, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 350, 40));
 
         BallotLabel.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         BallotLabel.setText("BALLOT #");
-        INDEX1.add(BallotLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, -1, -1));
+        INDEX1.add(BallotLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 230, -1, -1));
 
         PositionLabel.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         PositionLabel.setText("POSITION");
-        INDEX1.add(PositionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 230, -1, -1));
+        INDEX1.add(PositionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, -1, -1));
 
         BallotSpinner.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         BallotSpinner.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        INDEX1.add(BallotSpinner, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 110, 40));
+        INDEX1.add(BallotSpinner, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 110, 40));
 
         electionsSubmitButton.setBackground(new java.awt.Color(25, 18, 211));
         electionsSubmitButton.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         electionsSubmitButton.setForeground(new java.awt.Color(255, 255, 255));
         electionsSubmitButton.setText("SUBMIT");
-        INDEX1.add(electionsSubmitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 430, 280, 50));
+        INDEX1.add(electionsSubmitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 280, 50));
 
         VotingTabLabel.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
         VotingTabLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -1612,8 +1602,6 @@ public class VoterMainPanelUI extends javax.swing.JFrame {
     private javax.swing.JLabel EMAILADDRESSLABEL;
     private javax.swing.JTextField EMAILTEXTFIELD;
     private javax.swing.JLabel EXIT;
-    private javax.swing.JComboBox<String> ElectionTypeChoice;
-    private javax.swing.JLabel ElectionTypeLabel;
     private javax.swing.JTable ElectionsTable;
     private javax.swing.JLabel EmailAddressLabel;
     private javax.swing.JPanel FEEDBACK;

@@ -44,9 +44,10 @@ public class LoginUI extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         RememberMe = new javax.swing.JCheckBox();
-        jLabel12 = new javax.swing.JLabel();
+        forgotPassword = new javax.swing.JLabel();
         AdminPortal = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -192,9 +193,14 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Forgot your password?");
+        forgotPassword.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        forgotPassword.setForeground(new java.awt.Color(255, 255, 255));
+        forgotPassword.setText("Forgot your password?");
+        forgotPassword.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                forgotPasswordMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -203,7 +209,7 @@ public class LoginUI extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(RememberMe)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                .addComponent(jLabel12))
+                .addComponent(forgotPassword))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -211,7 +217,7 @@ public class LoginUI extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RememberMe)
-                    .addComponent(jLabel12)))
+                    .addComponent(forgotPassword)))
         );
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 340, 20));
@@ -229,6 +235,11 @@ public class LoginUI extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Please sign in to access your account");
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Beta test 0.0.1");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, 160, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 430, 450));
 
@@ -313,6 +324,15 @@ public class LoginUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_LoginButtonMouseClicked
 
+    private void forgotPasswordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotPasswordMouseClicked
+       try{
+           ForgotPasswordUI forgotpassword = new ForgotPasswordUI();
+           forgotpassword.setVisible(true);
+       } catch(Exception e){
+           e.printStackTrace();
+       }
+    }//GEN-LAST:event_forgotPasswordMouseClicked
+
     private void loadSavedCredentials() {
         String[] credentials = RememberMeUtility.loadCredentials();
         emailField.setText(credentials[0]);
@@ -365,15 +385,16 @@ public class LoginUI extends javax.swing.JFrame {
     private javax.swing.JLabel Show;
     private javax.swing.JLabel SignUp;
     private javax.swing.JTextField emailField;
+    private javax.swing.JLabel forgotPassword;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
